@@ -14,7 +14,7 @@ Code performance review
 ```csharp
 public class LoopTest
 {
-    private void LoopEnumerable(EnumType type, long loopCnt)    
+    public void LoopEnumerable(EnumType type, long loopCnt)    
     {    
        console.WriteLine(string.Format("Total Time: {0} sec", new LoopAction(type, loopCnt).Run());
     }
