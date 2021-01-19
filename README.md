@@ -1,27 +1,23 @@
 # testrepo
 
 ## Overview
-Discussions allows community members to start conversations and ask questions without opening issues. Get started by toggling Discussions under Features.
+Code performance review
 
 ## List
-- Class
-  - Method
-    - [x] Test
-    - [ ] Check1
-  - Private
+- for / foreach
+  - Enumerable    
+  - Array
   
   
 ## Code
 > this code is sample resource
 ```csharp
-public class Test
+public class LoopTest
 {
-    public string Test2()
-    {
-      return "";
+    private void LoopEnumerable(EnumType type, long loopCnt)    
+    {    
+       console.WriteLine(string.Format("Total Time: {0} sec", new LoopAction(type, loopCnt).Run());
     }
 }
 ```
-
-
-[here](https://github.com)
+code: [here](https://github.com)
