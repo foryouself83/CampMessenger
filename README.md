@@ -110,6 +110,7 @@ TBD ...
   1. 계정 정보 입력(CampAdmin / campadmin2019!)
   1. 설정 > PC 버전관리 > 신규 버전 등록 선택
   1. 버전 관리 항목 입력   
+  ```  
   |항목|내용|
   |:---:|:---:|  
   |버전|프로그램 버전|
@@ -121,6 +122,7 @@ TBD ...
   |x64|자동 업데이트 파일|
   |x86 upload|자동 업데이트 파일|
   |x64 upload|자동 업데이트 파일|    
+  ```
   
   <img style="width: 300px; height: 500px" src="https://github.com/foryouself83/testrepo/blob/main/src/Images/%EB%A1%9C%EA%B7%B8%EC%9D%B8%ED%99%94%EB%A9%B4_%EC%95%88%EB%82%B4%EB%AC%B8%EA%B5%AC.JPG?raw=true"/>
   
