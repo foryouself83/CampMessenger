@@ -5,24 +5,17 @@
 
 ## 목차
   1. 시스템 구성  
-    |항목|내용|
-    |:---:|:---:|  
-    |개발 언어|C# / WPF / .NetFramework 4.6.1|
-    |DB|System.Data.Sqlite|
-    |IDE|VisualStudio 2019 Pro|
-    |Repository|<http://192.168.201.158/git/AppCampMessenger_PC.git>|
-    |Design|zeplin platform  <br>ID:yjchoi@enliple.com  <br>PW: camp12345|
   1. 주요 기능  
-    1) 채팅            
+    1. 채팅            
       |항목|내용|
       |:---:|:---:|  
       |Protocol|XMPP|
       |Library|Sharp.Xmpp|
       |Code|XmppManager.cs|
-    2) API  
-    3) AWS  
-    4) DB
-    5) Auto Update
+    2. API  
+    3. AWS  
+    4. DB
+    5. Auto Update
   1. 미비 사항
   1. 최근 개발 항목
   1. 참고 사항  
@@ -56,3 +49,10 @@ public class LoopTest
 code: [here](https://github.com)
 
 
+|항목|내용|
+|:---:|:---:|  
+|개발 언어|C# / WPF / .NetFramework 4.6.1|
+|DB|System.Data.Sqlite|
+|IDE|VisualStudio 2019 Pro|
+|Repository|<http://192.168.201.158/git/AppCampMessenger_PC.git>|
+|Design|zeplin platform  <br>ID:yjchoi@enliple.com  <br>PW: camp12345|  
