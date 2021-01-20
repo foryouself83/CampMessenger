@@ -20,8 +20,7 @@ TBD ...
 |Design|zeplin platform  <br>ID:yjchoi@enliple.com  <br>PW: camp12345|  
 ## 주요 기능   
 ### 채팅   
----
-  - 주요 항목    
+  + 주요 항목    
     |항목|내용|
     |:---:|:---:|  
     |Protocol|XMPP|
