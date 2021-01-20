@@ -4,15 +4,15 @@
 캠프 PC 버전의 인수인계 자료
 
 ## 목차
-  - 시스템 구성
-  - 시스템 구조
-  - 주요 기능
-    1. 채팅
-      1)
-    2. API
-    3. AWS
-  - 미비 사항
-  - 참고 사항
+  1. 시스템 구성
+  2. 시스템 구조
+  3. 주요 기능
+    1) 채팅
+      - Lib
+    2) API
+    3) AWS
+  4. 미비 사항
+  5. 참고 사항
   <img style="width: 300px; height: 500px" src="https://github.com/foryouself83/testrepo/blob/main/src/Images/%EB%A1%9C%EA%B7%B8%EC%9D%B8%ED%99%94%EB%A9%B4_%EC%95%88%EB%82%B4%EB%AC%B8%EA%B5%AC.JPG?raw=true"/>
   
 ## Code
