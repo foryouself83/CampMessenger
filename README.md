@@ -20,10 +20,10 @@
       |Protocol|XMPP|
       |Library|Sharp.Xmpp|
       |Code|XmppManager.cs|   
-    1.1. API  
-    1.1. AWS  
-    1.1. DB
-    1.1. Auto Update
+  1.1. API  
+  1.1. AWS  
+  1.1. DB
+  1.1. Auto Update
   1. 미비 사항
   1. 최근 개발 항목
   1. 참고 사항  
