@@ -114,14 +114,14 @@ TBD ...
     Pre-Production 브런치에서 테스트가 완료된 항목을 Commit하며, 최종 또는 긴급 등 배포되는 최종 소스를 관리하는 목적으로 사용한다.
   
 ## 배포
-## 서명 방법
+### 서명 방법
   1. AssemblyInfo.cs 에 AssemblyVersion, AssemblyFileVersion 갱신   
   1. \192.168.201.60, PW: 1(공유 PC 접근)   
   1. C:\work\signtool\AppExeSignCode.bat을 이용하여 서명   
   1. 인스톨쉴드를 이용하여 설치 파일 생성   
   1. AppSetupSignCode.bat을 이용하여 설치파일 서명   
   
-## 배포 방법  
+### 배포 방법  
   1. <https://admin.lubig.co.kr/login>, <https://adminstage.lubig.co.kr/login> 접속
   1. 계정 정보 입력(CampAdmin / campadmin2019!)
   1. 설정 > PC 버전관리 > 신규 버전 등록 선택
