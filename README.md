@@ -20,8 +20,10 @@
       |Protocol|XMPP|
       |Library|Sharp.Xmpp|
     - 설명   
+      ```
       Sharp.Xmpp 라이브러리의 함수 및 이벤트를 기본으로 커스텀된 메시지를 수/발신한다.   
       채팅방 초대, 메시지 수/발신, 채팅방 정보, 채팅방 참여자 정보 등 채팅의 전반적인 부분을 담당한다.
+      ```
     - 참조 코드   
       XMPPManager.cs
   + API  
