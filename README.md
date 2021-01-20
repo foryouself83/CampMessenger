@@ -6,13 +6,13 @@
 ## 목차
   1. 시스템 구성  
   1. 주요 기능  
-    1. 채팅  
+    1.1. 채팅  
       |항목|내용|
       |:---:|:---:|  
       |Protocol|XMPP|
       |Library|Sharp.Xmpp|
       |Code|XmppManager.cs|   
-    1. API  
+    1.2. API  
     1. AWS  
     1. DB
     1. Auto Update
