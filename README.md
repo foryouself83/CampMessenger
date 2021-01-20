@@ -14,8 +14,7 @@
   |Repository|<http://192.168.201.158/git/AppCampMessenger_PC.git>|
   |Design|zeplin platform  <br>ID:yjchoi@enliple.com  <br>PW: camp12345|  
 * 주요 기능  
-  + 채팅    
-  
+  + 채팅      
     |항목|내용|
     |:---:|:---:|  
     |Protocol|XMPP|
