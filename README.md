@@ -15,14 +15,12 @@
   |Design|zeplin platform  <br>ID:yjchoi@enliple.com  <br>PW: camp12345|
     
   1. 주요 기능  
-    1) 채팅  
-        
+    1) 채팅          
   |항목|내용|
   |:---:|:---:|  
   |Protocol|XMPP|
   |Library|Sharp.Xmpp|
-  |Code|XmppManager.cs|
-  
+  |Code|XmppManager.cs|  
     1) API  
     1) AWS  
     1) DB
