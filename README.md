@@ -12,7 +12,7 @@
   |DB|System.Data.Sqlite|
   |IDE|VisualStudio 2019 Pro|
   |Repository|<http://192.168.201.158/git/AppCampMessenger_PC.git>|
-  |Design|zeplin platform  <br>ID:yjchoi@enliple.com  <br>PW: camp12345|  
+  |Design|zeplin platform  <br>ID:yjchoi@enliple.com  <br>PW: camp12345|
 1. 주요 기능  
   1.1. 채팅    
   
