@@ -19,8 +19,8 @@ TBD ...
 |Repository|<http://192.168.201.158/git/AppCampMessenger_PC.git>|
 |Design|zeplin platform  <br>ID:yjchoi@enliple.com  <br>PW: camp12345|  
 ## 주요 기능   
-### 채팅   
-  + 주요 항목    
+### * 채팅   
+  - 주요 항목    
     |항목|내용|
     |:---:|:---:|  
     |Protocol|XMPP|
@@ -34,7 +34,7 @@ TBD ...
     ```
     XMPPManager
     ```
-### API  
+### * API  
   - Address
     |항목|Url|
     |:---:|:---:|  
@@ -51,7 +51,7 @@ TBD ...
     LubigAPIManager
     ```
     
-### AWS
+### * AWS
   - 주요 항목
     |항목|내용|
     |:---:|:---:|  
@@ -65,7 +65,7 @@ TBD ...
     ```
     AWSManager
     ```
-### DB
+### * DB
   - 주요 항목
     |항목|내용|
     |:---:|:---:|  
@@ -79,7 +79,7 @@ TBD ...
     ```
     SqlManager
     ```
-### 자동 업데이트      
+### * 자동 업데이트      
   - 설명   
     ```
     프로그램 버전정보를 비교하여 낮을 경우 Login시 프로그램을 업데이트한다.
