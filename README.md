@@ -111,9 +111,9 @@ TBD ...
   - Pre-Production
     Master 브런치에서 테스트가 완료된 항목을 Commit하며, 배포 전 테스트하는 목적으로 사용한다.
   - Production
-    Pre-Production
+    Pre-Production 브런치에서 테스트가 완료된 항목을 Commit하며, 최종 또는 긴급 등 배포되는 최종 소스를 관리하는 목적으로 사용한다.
   
-
+## 배포
 ## 서명 방법
   1. AssemblyInfo.cs 에 AssemblyVersion, AssemblyFileVersion 갱신   
   1. \192.168.201.60, PW: 1(공유 PC 접근)   
