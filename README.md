@@ -6,16 +6,14 @@
 ## 목차
   1. 시스템 구성  
   1. 주요 기능  
-    1. 채팅
-      > qqaa   
-      
+    1. 채팅   
+    
       |항목|내용|
       |:---:|:---:|  
       |Protocol|XMPP|
       |Library|Sharp.Xmpp|
-      |Code|XmppManager.cs|
-      
-      > aa   
+      |Code|XmppManager.cs|   
+         
     2. API  
     3. AWS  
     4. DB
