@@ -23,8 +23,8 @@
   5. 최근 개발 항목
   5. 참고 사항  
   
-  
-  ---
+
+---
 ms.openlocfilehash: b90821d0d3495f6006d1d97b3d3377e984c74c5e
 ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
 ms.translationtype: HT
