@@ -18,7 +18,7 @@ TBD ...
 |IDE|VisualStudio 2019 Pro|
 |Repository|<http://192.168.201.158/git/AppCampMessenger_PC.git>|
 |Design|zeplin platform  <br>ID:yjchoi@enliple.com  <br>PW: camp12345|  
-## 주요 기능
+## 주요 기능   
 ### 채팅      
   - 주요 항목    
     |항목|내용|
