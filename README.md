@@ -112,6 +112,20 @@ TBD ...
     Master 브런치에서 테스트가 완료된 항목을 Commit하며, 배포 전 테스트하는 목적으로 사용한다.
   - Production
     Pre-Production 브런치에서 테스트가 완료된 항목을 Commit하며, 최종 또는 긴급 등 배포되는 최종 소스를 관리하는 목적으로 사용한다.
+    
+### 기능 개발
+  1. Pre-Production에서 로컬 브런치 생성
+  1. 기능 개발 후 Master 브런치에 Commit 후 테스트
+  1. 테스트 완료 후 Pre-Production 브런치에 Commit
+  
+### 배포 버전 버그 픽스
+  1. Production에서 로컬 브런치 생성
+  2. 버그 픽스 후 Master 브런치에 Commit 후 테스트
+  3. 테스트 완료 후 Pre-Production, Production 브런치에 Commit
+  4. Production 브런치에 버전정보 Tag 추가 후 배포
+  
+### 배포
+  1. Prouction 브런치에 버전정보 Tag 추가 후 배포
   
 ## 배포
 ### 서명 방법
