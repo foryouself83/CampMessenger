@@ -14,20 +14,27 @@
   |Design|zeplin platform  <br>ID:yjchoi@enliple.com  <br>PW: camp12345|  
 * 주요 기능  
   + 채팅      
+    - 주요 항목
     |항목|내용|
     |:---:|:---:|  
     |Protocol|XMPP|
     |Library|Sharp.Xmpp|
-    |Code|XmppManager.cs|  
+    
+    
+    - 설명   
+      Sharp.Xmpp 라이브러리의 함수 및 이벤트를 기본으로 커스텀된 메시지를 수/발신하여 Parsing 부분도 포함되어 있다.
+      전반적인
   + API  
+    - Address
     |Address|Url|
     |:---:|:---:|  
     |Lubig|<https://api.lubig.co.kr>|
     |Store|<https://storeapi.lubig.co.kr>|
-    |Admin|<https://admin.lubig.co.kr>|  
+    |Admin|<https://admin.lubig.co.kr>|    
     
     
-    sdfdssdfasdf
+    - 설명
+      Http
     
   + AWS  
     |항목|내용|
