@@ -20,8 +20,25 @@
     |Library|Sharp.Xmpp|
     |Code|XmppManager.cs|  
   + API  
+    |Address|Url|
+    |:---:|:---:|  
+    |Lubig|<https://api.lubig.co.kr>|
+    |Store|<https://storeapi.lubig.co.kr>|
+    |Admin|<https://admin.lubig.co.kr>|  
+    sdfdssdfasdf
+    
   + AWS  
+    |항목|내용|
+    |:---:|:---:|  
+    |Protocol|XMPP|
+    |Library|Sharp.Xmpp|
+    |Code|XmppManager.cs|  
   + DB
+    |항목|내용|
+    |:---:|:---:|  
+    |Protocol|XMPP|
+    |Library|Sharp.Xmpp|
+    |Code|XmppManager.cs|  
   + Auto Update
 * 미비 사항
 * 최근 개발 항목
