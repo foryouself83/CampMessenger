@@ -8,11 +8,13 @@
   1. 주요 기능  
     1. 채팅
       > qqaa   
+      
       |항목|내용|
       |:---:|:---:|  
       |Protocol|XMPP|
       |Library|Sharp.Xmpp|
       |Code|XmppManager.cs|
+      
       > aa   
     2. API  
     3. AWS  
