@@ -104,6 +104,16 @@ TBD ...
 |대화방 공지사항 게시판|이재웅|-|Master branch에 Commit|
 
 # 참고사항
+## Git
+### 브런치 정의
+  - Master
+    개발용 원격 브런치로 로컬 브런치에서 작업한 기능을 테스트하는 목적으로 사용한다.
+  - Pre-Production
+    Master 브런치에서 테스트가 완료된 항목을 Commit하며, 배포 전 테스트하는 목적으로 사용한다.
+  - Production
+    Pre-Production
+  
+
 ## 서명 방법
   1. AssemblyInfo.cs 에 AssemblyVersion, AssemblyFileVersion 갱신   
   1. \192.168.201.60, PW: 1(공유 PC 접근)   
@@ -115,7 +125,7 @@ TBD ...
   1. <https://admin.lubig.co.kr/login, https://adminstage.lubig.co.kr/login> 접속
   1. 계정 정보 입력(CampAdmin / campadmin2019!)
   1. 설정 > PC 버전관리 > 신규 버전 등록 선택
-  * 버전 관리 항목  
+  - 버전 관리 항목  
     |항목|내용|
     |:---:|:---:|  
     |버전|프로그램 버전|
