@@ -4,24 +4,21 @@
 캠프 PC 버전의 인수인계 자료
 
 ## 목차
-  1. 시스템 구성  
-  
-  |항목|내용|
-  |:---:|:---:|  
-  |개발 언어|C# / WPF / .NetFramework 4.6.1|
-  |DB|System.Data.Sqlite|
-  |IDE|VisualStudio 2019 Pro|
-  |Repository|<http://192.168.201.158/git/AppCampMessenger_PC.git>|
-  |Design|zeplin platform  <br>ID:yjchoi@enliple.com  <br>PW: camp12345|
-    
+  1. 시스템 구성    
+    |항목|내용|
+    |:---:|:---:|  
+    |개발 언어|C# / WPF / .NetFramework 4.6.1|
+    |DB|System.Data.Sqlite|
+    |IDE|VisualStudio 2019 Pro|
+    |Repository|<http://192.168.201.158/git/AppCampMessenger_PC.git>|
+    |Design|zeplin platform  <br>ID:yjchoi@enliple.com  <br>PW: camp12345|    
   1. 주요 기능  
-    1) 채팅  
-    
-  |항목|내용|
-  |:---:|:---:|  
-  |Protocol|XMPP|
-  |Library|Sharp.Xmpp|
-  |Code|XmppManager.cs|
+    1) 채팅            
+      |항목|내용|
+      |:---:|:---:|  
+      |Protocol|XMPP|
+      |Library|Sharp.Xmpp|
+      |Code|XmppManager.cs|
     2) API  
     3) AWS  
     4) DB
