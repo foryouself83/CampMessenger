@@ -7,6 +7,7 @@
 > * 미비 사항    
 > * 최근 개발 항목    
 > * 참고 사항   
+
 # 개발 환경
 본 프로그램을 개발하기 위한 환경에 대한 정보입니다.
 |항목|내용|
@@ -15,7 +16,8 @@
 |DB|System.Data.Sqlite|
 |IDE|VisualStudio 2019 Pro|
 |Repository|<http://192.168.201.158/git/AppCampMessenger_PC.git>|
-|Design|zeplin platform  <br>ID:yjchoi@enliple.com  <br>PW: camp12345|  
+|Design|zeplin platform  <br>ID:yjchoi@enliple.com  <br>PW: camp12345|   
+
 # 주요 기능   
 ## 채팅   
   - 주요 항목    
@@ -32,6 +34,7 @@
     ```
     XMPPManager
     ```
+    
 ## API  
   - Address
     |항목|Url|
@@ -63,6 +66,7 @@
     ```
     AWSManager
     ```
+    
 ## DB
   - 주요 항목
     |항목|내용|
@@ -77,6 +81,7 @@
     ```
     SqlManager
     ```
+    
 ## 자동 업데이트      
   - 설명   
     ```
@@ -86,6 +91,7 @@
     ```
     UpdateManager
     ```
+    
 # 미비 사항
 TBD ...
 
