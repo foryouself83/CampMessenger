@@ -13,6 +13,7 @@
   |IDE|VisualStudio 2019 Pro|
   |Repository|<http://192.168.201.158/git/AppCampMessenger_PC.git>|
   |Design|zeplin platform  <br>ID:yjchoi@enliple.com  <br>PW: camp12345|
+  
 1. 주요 기능  
   1.1. 채팅    
   
@@ -21,6 +22,7 @@
   |Protocol|XMPP|
   |Library|Sharp.Xmpp|
   |Code|XmppManager.cs|
+  
   1.1. API  
   1.1. AWS  
   1.1. DB
