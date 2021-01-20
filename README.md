@@ -4,7 +4,7 @@
 캠프 PC 버전의 인수인계 자료
 
 ## 목차
-  1. 시스템 구성
+1. 시스템 구성
   
   |항목|내용|
   |:---:|:---:|  
@@ -13,20 +13,20 @@
   |IDE|VisualStudio 2019 Pro|
   |Repository|<http://192.168.201.158/git/AppCampMessenger_PC.git>|
   |Design|zeplin platform  <br>ID:yjchoi@enliple.com  <br>PW: camp12345|  
-  1. 주요 기능  
-    1.1. 채팅  
+1. 주요 기능  
+  1.1. 채팅  
       |항목|내용|
       |:---:|:---:|  
       |Protocol|XMPP|
       |Library|Sharp.Xmpp|
       |Code|XmppManager.cs|
-    1.1. API  
-    1.1. AWS  
-    1.1. DB
-    1.1. Auto Update
-  1. 미비 사항
-  1. 최근 개발 항목
-  1. 참고 사항  
+  1.1. API  
+  1.1. AWS  
+  1.1. DB
+  1.1. Auto Update
+1. 미비 사항
+1. 최근 개발 항목
+1. 참고 사항  
   
 
 ---
