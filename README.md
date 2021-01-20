@@ -98,7 +98,30 @@ TBD ...
 |대화방 공지사항 게시판|이재웅|-|Master branch에 Commit|
 
 # 참고사항
-
+## 서명 방법
+  1. AssemblyInfo.cs 에 AssemblyVersion, AssemblyFileVersion 갱신   
+  1. \192.168.201.60, PW: 1(공유 PC 접근)   
+  1. C:\work\signtool\AppExeSignCode.bat을 이용하여 서명   
+  1. 인스톨쉴드를 이용하여 설치 파일 생성   
+  1. AppSetupSignCode.bat을 이용하여 설치파일 서명   
+  
+## 배포 방법  
+  1. <https://admin.lubig.co.kr/login, https://adminstage.lubig.co.kr/login> 접속
+  1. 계정 정보 입력(CampAdmin / campadmin2019!)
+  1. 설정 > PC 버전관리 > 신규 버전 등록 선택
+  1. 버전 관리 항목 입력
+    |항목|내용|
+    |:---:|:---:|  
+    |버전|프로그램 버전|
+    |강업 여부|강제 업데이트 여부|
+    |설명|업데이트 내역|
+    |x86 exe|설치파일|
+    |x86 zip|자동 업데이트 파일|
+    |x64|설치 파일|
+    |x64|자동 업데이트 파일|
+    |x86 upload|자동 업데이트 파일|
+    |x64 upload|자동 업데이트 파일|    
+  
   <img style="width: 300px; height: 500px" src="https://github.com/foryouself83/testrepo/blob/main/src/Images/%EB%A1%9C%EA%B7%B8%EC%9D%B8%ED%99%94%EB%A9%B4_%EC%95%88%EB%82%B4%EB%AC%B8%EA%B5%AC.JPG?raw=true"/>
   
 ## Code
