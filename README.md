@@ -20,17 +20,15 @@
       |Protocol|XMPP|
       |Library|Sharp.Xmpp|
     - 설명   
-      Sharp.Xmpp 라이브러리의 함수 및 이벤트를 기본으로 커스텀된 메시지를 수/발신하여 Parsing 부분도 포함되어 있다.
-      전반적인
+      Sharp.Xmpp 라이브러리의 함수 및 이벤트를 기본으로 커스텀된 메시지를 수/발신하여 Parsing 부분도 포함되어 있다.   
+      채팅방 초대/나가기, 메시지 수/발신, 채팅방 정보, 채팅방 참여자 정보 등 채팅의 전반적인 부분을 담당한다.
   + API  
     - Address
-    |Address|Url|
-    |:---:|:---:|  
-    |Lubig|<https://api.lubig.co.kr>|
-    |Store|<https://storeapi.lubig.co.kr>|
-    |Admin|<https://admin.lubig.co.kr>|    
-    
-    
+      |Address|Url|
+      |:---:|:---:|  
+      |Lubig|<https://api.lubig.co.kr>|
+      |Store|<https://storeapi.lubig.co.kr>|
+      |Admin|<https://admin.lubig.co.kr>|    
     - 설명
       Http
     
