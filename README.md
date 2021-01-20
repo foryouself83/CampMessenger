@@ -109,7 +109,7 @@ TBD ...
   1. <https://admin.lubig.co.kr/login, https://adminstage.lubig.co.kr/login> 접속
   1. 계정 정보 입력(CampAdmin / campadmin2019!)
   1. 설정 > PC 버전관리 > 신규 버전 등록 선택
-  * 버전 관리 항목 입력  
+  * 버전 관리 항목  
     |항목|내용|
     |:---:|:---:|  
     |버전|프로그램 버전|
