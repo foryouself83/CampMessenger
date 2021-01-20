@@ -12,6 +12,7 @@
   |IDE|VisualStudio 2019 Pro|
   |Repository|<http://192.168.201.158/git/AppCampMessenger_PC.git>|
   |Design|zeplin platform  ID:yjchoi@enliple.com  PW: camp12345|
+  |:---:|:---:| 
   2. 시스템 구조
   3. 주요 기능  
     1) 채팅  
@@ -23,6 +24,14 @@
   5. 참고 사항  
   
   
+  ---
+ms.openlocfilehash: b90821d0d3495f6006d1d97b3d3377e984c74c5e
+ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83613592"
+---
   
   
   
