@@ -21,7 +21,7 @@
   |:---:|:---:|  
   |Protocol|XMPP|
   |Library|Sharp.Xmpp|
-  |Code|XmppManager.cs|  
+  |Code|XmppManager.cs|
     2) API  
     3) AWS  
     4) DB
