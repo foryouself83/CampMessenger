@@ -19,7 +19,7 @@ TBD ...
 |Repository|<http://192.168.201.158/git/AppCampMessenger_PC.git>|
 |Design|zeplin platform  <br>ID:yjchoi@enliple.com  <br>PW: camp12345|  
 ## 주요 기능   
-### * 채팅   
+### 1. 채팅   
   - 주요 항목    
     |항목|내용|
     |:---:|:---:|  
@@ -34,7 +34,7 @@ TBD ...
     ```
     XMPPManager
     ```
-### * API  
+### 1. API  
   - Address
     |항목|Url|
     |:---:|:---:|  
