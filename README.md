@@ -9,12 +9,13 @@
   
   |항목|내용|
   |:---:|:---:|  
-  | '개발 언어' |C# / WPF / .NetFramework 4.6.1|
+  | 개발 언어 |C# / WPF / .NetFramework 4.6.1|
   |DB|System.Data.Sqlite|
   |IDE|VisualStudio 2019 Pro|
   |Repository|<http://192.168.201.158/git/AppCampMessenger_PC.git>|
-  |Design|zeplin platform  ID:yjchoi@enliple.com  PW: camp12345|
-  |:---:|:---:| 
+  |Design|zeplin platform  <br>ID:yjchoi@enliple.com  <br>PW: camp12345|
+  
+  
   2. 시스템 구조
   3. 주요 기능  
     1) 채팅  
