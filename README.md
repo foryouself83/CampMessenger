@@ -33,6 +33,23 @@
   - 참조 코드   
     ```csharp   
     XMPPManager
+    
+    if (!xmpp.XmppConnect())
+    {
+                        for (int i = 0; i < 2; i++)
+                        {
+                            if (!xmpp.XmppRetryConnect())
+                            {
+                                Messenger.Default.Send(new NotificationMessage("Logout"));
+                                System.Windows.Application.Current.Dispatcher.Invoke(() =>
+                                {
+                                    log.WriteLog(LogType.Error, System.Reflection.MethodBase.GetCurrentMethod(), "XmppConnect failed.");
+                                    sys.OpenMessageBox("채팅 서버 연결에 실패하였습니다.", "", MessageBoxButton.OK);
+                                });
+                                return;
+                            }
+                        }
+                    }
     ```
     
 ## API  
@@ -49,7 +66,14 @@
     ```
   - 참조 코드   
     ```csharp   
-    LubigAPIManager
+    var login = LoginManager.Instanse();
+    var api = LubigAPIManager.Instanse();
+    
+    login.Login = api.SendLoginAPI(LoginID, strPassword, out errMsg);
+    if (login.Login == false)
+    {
+	AlarmText = errMsg;
+    }
     ```
     
 ## AWS
@@ -64,7 +88,14 @@
     ```
   - 참조 코드   
     ```csharp   
-    AWSManager
+    AWSManager aws = AWSManager.Instanse();
+    
+    AwsUploadDataInfo info = new AwsUploadDataInfo();
+    info.ImageStream = outMs;
+    info.BucketName = buckeFlodertName;
+    info.FileName = fileName;
+    
+    aws.AddUploadFile(info);
     ```
     
 ## DB
@@ -80,6 +111,7 @@
   - 참조 코드   
     ```csharp   
     var sql = SqlManager.Instanse();
+    
     CampMemberListInfo memberInfo = null;
     if (!sql.SelectCampMemberInfoData(out memberInfo, userKey, campRegNo.ToString()))
     {
