@@ -102,9 +102,9 @@
   - 중복된 Image 랜더링 제거(Image manager class 필요)
   - API 호출시 비동기 처리 추가
     
-
 # 최근 개발 항목
-2021년 1월 13일기준으로 가장 최근에 개발한 항목입니다.
+2021년 1월 13일기준으로 가장 최근에 개발한 항목으로
+세부 사항의 경우 Git Commit 이력을 참고하시기 바랍니다.
 |항목|담당자|배포일|비고|
 |:---:|:---:|:---:|:---:|  
 |캠프 1:1대화|유병석|2020.01.11|프로그램 버전:0.8.99|
@@ -160,6 +160,10 @@
     |x86 upload|업데이트 프로그램|
     |x64 upload|업데이트 프로그램|    
 
+### 시퀀스 다이어그램
+  * 로그인
+  
+  
   
   <img style="width: 300px; height: 500px" src="https://github.com/foryouself83/testrepo/blob/main/src/Images/%EB%A1%9C%EA%B7%B8%EC%9D%B8%ED%99%94%EB%A9%B4_%EC%95%88%EB%82%B4%EB%AC%B8%EA%B5%AC.JPG?raw=true"/>
   
