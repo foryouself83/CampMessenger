@@ -88,8 +88,14 @@
     프로그램 버전정보를 비교하여 낮을 경우 Login시 프로그램을 업데이트한다.
     ```
   - 참조 코드   
-    ```
-    UpdateManager
+    ```csharp
+    if (!UpdateManager.Instanse().AutoUpdate(out errorMsg))
+				{
+					login.Login = false;
+					AlarmText = errMsg = "프로그램 업데이트가 필요합니다.";
+
+					return;
+				}
     ```
     
 # 미비 사항
