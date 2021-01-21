@@ -31,7 +31,7 @@
     채팅방 초대, 메시지 수/발신, 채팅방 정보, 채팅방 참여자 정보 등 채팅의 전반적인 부분을 담당한다.
     ```
   - 참조 코드   
-    ```
+    ```csharp   
     XMPPManager
     ```
     
@@ -48,7 +48,7 @@
     각 서버에서 지원하는 API를 이용하여 해당 기능을 수행한다.(ex. 친구 목록, 기존 대화 목록 등)   
     ```
   - 참조 코드   
-    ```
+    ```csharp   
     LubigAPIManager
     ```
     
@@ -63,7 +63,7 @@
     AWS의 S3/EC2를 이용하여 이미지, 파일등을 업로드 및 다운로드한다.         
     ```
   - 참조 코드   
-    ```
+    ```csharp   
     AWSManager
     ```
     
@@ -78,8 +78,13 @@
     유저별 대화방, 참여자 정보, 상단고정, 알림설정등의 정보를 저장한다. 
     ```
   - 참조 코드   
-    ```
-    SqlManager
+    ```csharp   
+    var sql = SqlManager.Instanse();
+    CampMemberListInfo memberInfo = null;
+    if (!sql.SelectCampMemberInfoData(out memberInfo, userKey, campRegNo.ToString()))
+    {
+	return false;
+    }
     ```
     
 ## 자동 업데이트      
@@ -88,7 +93,7 @@
     프로그램 버전정보를 비교하여 낮을 경우 Login시 프로그램을 업데이트한다.
     ```
   - 참조 코드   
-    ```csharp
+    ```csharp        
     if (!UpdateManager.Instanse().AutoUpdate(out errorMsg))
 	{
 		login.Login = false;
