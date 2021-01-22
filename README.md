@@ -54,15 +54,15 @@
 ## 메시지
   - 이모티콘   
     ```xml      
-	<message type = "groupchat"
-		to = "91b3730a-cfc6-4aec-b292-7090e2a89652@lubigmuc.xmpp.lubig.co.kr"
-		msgtype = "file"
-		id = "F9158CFA-E77D-4892-9A3D-9372DBB018FE"
-		nick = "다리우스skskdkdjdjd"
-		filetype = "emoticon"
-		jid = "c4edd7d2dac84135ad5a660739fa2a8c@xmpp.lubig.co.kr"
-		roomid = "518AA056-7CBB-4633-8BAF-4707D6926466"
-		date = "2020-06-02T08:10:44.801Z"> 
+	<message type="groupchat"
+		to="91b3730a-cfc6-4aec-b292-7090e2a89652@lubigmuc.xmpp.lubig.co.kr"
+		msgtype="file"
+		id="F9158CFA-E77D-4892-9A3D-9372DBB018FE"
+		nick="다리우스skskdkdjdjd"
+		filetype="emoticon"
+		jid="c4edd7d2dac84135ad5a660739fa2a8c@xmpp.lubig.co.kr"
+		roomid="518AA056-7CBB-4633-8BAF-4707D6926466"
+		date="2020-06-02T08:10:44.801Z"> 
 		<body>emoticon<body/>
 		<emoticon>23404</emoticon>
 		<emoticonurl>https://duf7tkmfho2jb.cloudfront.net /emoji/20191007175815/detail/04.png </emoticonurl>
@@ -92,7 +92,7 @@
             resource="CAMP_MOBILE">
             <body>[투표취소] : 2</body>
             <vote seq="973" status="delete" title="2" />
-        </message>
+	</message>
     ```
   - 투표 종료   
     ```xml      
@@ -107,7 +107,7 @@
                 <item rank="0" imgurl="">2</item>
                 <item rank="0" imgurl="">3</item>
             </vote>
-        </message>
+	</message>
     ```
   - 부캠프장 설정   
     ```xml      
