@@ -52,8 +52,7 @@
 	}
     ```
 ## 메시지
-  - 이모티콘
-  
+  - 이모티콘     
     ```xml   
 
 <message type = "groupchat"
