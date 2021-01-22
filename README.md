@@ -52,6 +52,17 @@
 	}
     ```
 ## 메시지
+  - 참조 코드   
+    ```csharp   
+    var login = LoginManager.Instanse();
+    var api = LubigAPIManager.Instanse();
+    
+    login.Login = api.SendLoginAPI(LoginID, strPassword, out errMsg);
+    if (login.Login == false)
+    {
+		AlarmText = errMsg;
+    }
+    ```
   - 이모티콘   
     ```xml   
 <message type = "groupchat"
