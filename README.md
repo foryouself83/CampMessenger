@@ -52,7 +52,7 @@
 	}
     ```
 ## 메시지
-  - 참조 코드   
+  - 이모티콘   
     ```xml      
 	<message type = "groupchat"
 	to = "91b3730a-cfc6-4aec-b292-7090e2a89652@lubigmuc.xmpp.lubig.co.kr"
@@ -67,11 +67,7 @@
 	<emoticonurl>https://duf7tkmfho2jb.cloudfront.net /emoji/20191007175815/detail/04.png < /emoticonurl>
 	<emoticontext>텍스트 내용을 이 곳에 추가</emoticontext></message>
     ```
-  - 이모티콘   
-    ```xml   
-
-    ```
-
+ 
 ## API  
   - Address
     |항목|Url|
