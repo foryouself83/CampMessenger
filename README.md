@@ -122,7 +122,7 @@
                 nick="김동언 : 김동언" memberlevel="2" type="set" />
             <force campregno="1334" roomtitle="shajsjsiopo" to="46b81db63f3a433cb1f36afbf86c7b20@xmpp.lubig.co.kr"
                 nick="QAtest70입니다." memberlevel="2" type="set" />
-        </message>
+	</message>
     ```
   - 부캠프장 해제   
     ```xml      
@@ -134,7 +134,7 @@
             resource="c4edd7d2dac84135ad5a660739fa2a8c">
             <body>camptransfer</body>
             <force campregno="1334" roomtitle="shajsjsiopo" to="" nick="" memberlevel="2" type="remove" />
-        </message>
+	</message>
     ```
   - 캠프장 이관  
     ```xml      
@@ -147,7 +147,7 @@
 	        <body>camptransfer</body>
 	        <force campregno="1334" roomtitle="shajsjsiopo" to="8f78d4642cf44bee9dfad5ca086fcef3@xmpp.lubig.co.kr"
         	nick="김동언 : 김동언" memberlevel="1" type="change" />
-        </message>
+	</message>
     ```
   - 캠프회원 강퇴   
     ```xml      
@@ -159,7 +159,7 @@
             <body>forceexit</body>
             <force to="46b81db63f3a433cb1f36afbf86c7b20@xmpp.lubig.co.kr" campregno="1334" roomtitle="shajsjsiopo"
                 nick="QAtest70입니다." />
-        </message>
+	</message>
     ```
   - 이모티콘   
     ```xml      
