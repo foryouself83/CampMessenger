@@ -54,18 +54,7 @@
 ## 메시지
   - 참조 코드   
     ```xml      
-    var login = LoginManager.Instanse();
-    var api = LubigAPIManager.Instanse();
-    
-    login.Login = api.SendLoginAPI(LoginID, strPassword, out errMsg);
-    if (login.Login == false)
-    {
-		AlarmText = errMsg;
-    }
-    ```
-  - 이모티콘   
-    ```xml   
-<message type = "groupchat"
+    <message type = "groupchat"
 to = "91b3730a-cfc6-4aec-b292-7090e2a89652@lubigmuc.xmpp.lubig.co.kr"
 msgtype = "file"
 id = "F9158CFA-E77D-4892-9A3D-9372DBB018FE"
@@ -74,6 +63,10 @@ filetype = "emoticon"
 jid = "c4edd7d2dac84135ad5a660739fa2a8c@xmpp.lubig.co.kr"
 roomid = "518AA056-7CBB-4633-8BAF-4707D6926466"
 date = "2020-06-02T08:10:44.801Z"> <body>emoticon<body/><emoticon>23404</emoticon><emoticonurl>https://duf7tkmfho2jb.cloudfront.net /emoji/20191007175815/detail/04.png < /emoticonurl><emoticontext>텍스트 내용을 이 곳에 추가</emoticontext></message>
+    ```
+  - 이모티콘   
+    ```xml   
+
     ```
 
 ## API  
