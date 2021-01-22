@@ -169,6 +169,96 @@
             <reservemsg to="c4edd7d2dac84135ad5a660739fa2a8c" nick="다리우스skskdkdjdjd">너ㅏㄴ</reservemsg>
 	</message>
     ```
+  - 레포트   
+    ```xml      
+	<message xmlns="jabber:client" msgtype="none" filetype="none" type="groupchat"
+            from="10f1fd2d-f8b7-4b4a-9503-323bf74eb284@lubigmuc.xmpp.lubig.co.kr/커머스 트렌드"
+            to="c4edd7d2dac84135ad5a660739fa2a8c@xmpp.lubig.co.kr/CAMP_MOBILE" nick="커머스 트렌드"
+            jid="213544db2e5b4fa4affa2ce4c2c1df01@xmpp.lubig.co.kr" id="9426166a-fe49-46d0-bd6f-c12398c46068"
+            date="2020-06-17T06:48:34.330Z" roomid="10f1fd2d-f8b7-4b4a-9503-323bf74eb284"
+            resource="213544db2e5b4fa4affa2ce4c2c1df01">
+            <body>안녕하세요! 모비트렌드입니다.😊
+                🗓 5월 1째주 (5/04 ~ 5/10)
+                커머스 주간리포트 보내드립니다.
+                📌 선택 카테고리
+                : 쇼핑 &gt; 식품 &gt; 농수산식품종합
+                📈 전주대비 데이터
+                ✔방문자 수 : 0.0% 상승 (+0.0%)
+                ✔매출 : 14.52% 상승 (+14.52%)
+                ✔전환율 : 8.06% 상승 (+8.06%)
+                ✔객단가 : 2.29% 하락 (-2.29%)
+                [※신뢰구간 오차범위 ±7%]</body>
+            <report title="커머스 주간 리포트"
+                iconurl="https://duf7tkmfho2jb.cloudfront.net/serviceInfo/Report/report_default.png"
+                servicetype="commerce" graphgubun="Y" sDeptKey="181" />
+	</message>
+    ```
+  - API 연동   
+    ```xml      
+	<message xmlns="jabber:client" msgtype="none" filetype="none" type="groupchat"
+            from="10f1fd2d-f8b7-4b4a-9503-323bf74eb284@lubigmuc.xmpp.lubig.co.kr/커머스 트렌드"
+            to="c4edd7d2dac84135ad5a660739fa2a8c@xmpp.lubig.co.kr/CAMP_MOBILE" nick="커머스 트렌드"
+            jid="213544db2e5b4fa4affa2ce4c2c1df01@xmpp.lubig.co.kr" id="6420a259-d73c-421a-b7cb-254203a3442a"
+            date="2020-06-17T06:54:04.939Z" resource="213544db2e5b4fa4affa2ce4c2c1df01">
+            <body>커머스 트렌드 연동이 설정 되었습니다.</body>
+            <apiconnect to="213544db2e5b4fa4affa2ce4c2c1df01@xmpp.lubig.co.kr" nick="커머스 트렌드" serviceId=""
+                profileimagethumbnailurl="https://duf7tkmfho2jb.cloudfront.net/serviceInfo/Commerce/commerce_thumbnail.jpg"
+                campmemberprofileyn="N" servicetype="commerce" />
+	</message>
+    ```
+  - API 연동 해제   
+    ```xml      
+	<message xmlns="jabber:client" msgtype="none" filetype="none" type="groupchat"
+            from="10f1fd2d-f8b7-4b4a-9503-323bf74eb284@lubigmuc.xmpp.lubig.co.kr/커머스 트렌드"
+            to="c4edd7d2dac84135ad5a660739fa2a8c@xmpp.lubig.co.kr/CAMP_MOBILE" nick="커머스 트렌드"
+            jid="213544db2e5b4fa4affa2ce4c2c1df01@xmpp.lubig.co.kr" id="50365d7b-660c-4e95-9b71-97b338a3cf65"
+            date="2020-06-17T06:54:29.702Z" resource="213544db2e5b4fa4affa2ce4c2c1df01">
+            <body>커머스 트렌드 연동이 해제 되었습니다.</body>
+            <apidisconnect to="213544db2e5b4fa4affa2ce4c2c1df01@xmpp.lubig.co.kr" nick="커머스 트렌드"
+                servicetype="commerce" />
+	</message>
+    ```
+  - API 연동 수정   
+    ```xml      
+	<message xmlns="jabber:client" msgtype="none" filetype="none" type="groupchat"
+            from="10f1fd2d-f8b7-4b4a-9503-323bf74eb284@lubigmuc.xmpp.lubig.co.kr/커머스 트렌드"
+            to="c4edd7d2dac84135ad5a660739fa2a8c@xmpp.lubig.co.kr/CAMP_MOBILE" nick="커머스 트렌드"
+            jid="213544db2e5b4fa4affa2ce4c2c1df01@xmpp.lubig.co.kr" id="72d4a94f-f647-46f5-8f8a-d8087bcd20d7"
+            date="2020-06-17T06:55:14.164Z" resource="213544db2e5b4fa4affa2ce4c2c1df01">
+            <body>커머스 트렌드 연동이 수정 되었습니다.</body>
+            <apirevision to="213544db2e5b4fa4affa2ce4c2c1df01@xmpp.lubig.co.kr" nick="커머스 트렌드" servicetype="commerce" />
+	</message>
+    ```
+  - 캠프 가입   
+    ```xml      
+	<message xmlns="jabber:client" msgtype="none" filetype="none" type="groupchat" nick="QAtest70입니다."
+            jid="46b81db63f3a433cb1f36afbf86c7b20@xmpp.lubig.co.kr"
+            to="c4edd7d2dac84135ad5a660739fa2a8c@xmpp.lubig.co.kr/CAMP_MOBILE" id="bd18fc24-7aee-40bd-8029-85666e795218"
+            from="10f1fd2d-f8b7-4b4a-9503-323bf74eb284@lubigmuc.xmpp.lubig.co.kr/QAtest70입니다."
+            date="2020-06-17T06:34:57.284Z" resource="46b81db63f3a433cb1f36afbf86c7b20">
+            <body>join</body>
+            <joining to="46b81db63f3a433cb1f36afbf86c7b20@xmpp.lubig.co.kr" nick="QAtest70입니다."
+                profileimageurl="https://duf7tkmfho2jb.cloudfront.net/chat/20200420/0211/000331fdb32b4d90b19aebfc936ab5fd_.PNG"
+                profileimagethumbnailurl="https://duf7tkmfho2jb.cloudfront.net/chat/20200420/0211/Thumbf5c73796aa38454fbe7b8a09335bf242_.PNG"
+                campmemberprofileyn="N" servicetype="" />
+	</message>
+    ```
+  -    
+    ```xml      
+	
+    ```
+  -    
+    ```xml      
+	
+    ```
+  -    
+    ```xml      
+	
+    ```
+  -    
+    ```xml      
+	
+    ```
  
 ## API  
   - Address
