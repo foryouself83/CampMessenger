@@ -72,16 +72,16 @@
   - 투표 등록   
     ```xml      
 	<message xmlns="jabber:client" msgtype="none" filetype="none" type="groupchat" date="2020-06-17T05:10:51.943Z"
-            nick="김동언 : 김동언" jid="8f78d4642cf44bee9dfad5ca086fcef3@xmpp.lubig.co.kr"
-            to="c4edd7d2dac84135ad5a660739fa2a8c@xmpp.lubig.co.kr/CAMP_MOBILE" id="72e2e98c-9b52-4570-a763-21e010b38cf8"
-            from="95995593-0bd0-40de-b73e-73c22be07e46@lubigmuc.xmpp.lubig.co.kr/8f78d4642cf44bee9dfad5ca086fcef3"
-            resource="CAMP_MOBILE">
-            <body>[투표] : 2</body>
-            <vote status="registration" seq="973" notice="N" type="text" title="2">
-                <item imgurl="">1</item>
-                <item imgurl="https://duf7tkmfho2jb.cloudfront.net/vote/DA2FBE01-1CDD-4620-AFCC-EB7887E48294_1592370651513.jpg">2</item>
-            </vote>
-        </message>
+		nick="김동언 : 김동언" jid="8f78d4642cf44bee9dfad5ca086fcef3@xmpp.lubig.co.kr"
+		to="c4edd7d2dac84135ad5a660739fa2a8c@xmpp.lubig.co.kr/CAMP_MOBILE" id="72e2e98c-9b52-4570-a763-21e010b38cf8"
+		from="95995593-0bd0-40de-b73e-73c22be07e46@lubigmuc.xmpp.lubig.co.kr/8f78d4642cf44bee9dfad5ca086fcef3"
+		resource="CAMP_MOBILE">
+		<body>[투표] : 2</body>
+		<vote status="registration" seq="973" notice="N" type="text" title="2">
+		<item imgurl="">1</item>
+		<item imgurl="https://duf7tkmfho2jb.cloudfront.net/vote/DA2FBE01-1CDD-4620-AFCC-EB7887E48294_1592370651513.jpg">2</item>
+		</vote>
+	</message>
     ```
   - 투표 취소   
     ```xml      
