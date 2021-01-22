@@ -55,17 +55,19 @@
   - 이모티콘   
     ```xml      
 	<message type = "groupchat"
-	to = "91b3730a-cfc6-4aec-b292-7090e2a89652@lubigmuc.xmpp.lubig.co.kr"
-	msgtype = "file"
-	id = "F9158CFA-E77D-4892-9A3D-9372DBB018FE"
-	nick = "다리우스skskdkdjdjd"
-	filetype = "emoticon"
-	jid = "c4edd7d2dac84135ad5a660739fa2a8c@xmpp.lubig.co.kr"
-	roomid = "518AA056-7CBB-4633-8BAF-4707D6926466"
-	date = "2020-06-02T08:10:44.801Z"> <body>emoticon<body/>
-	<emoticon>23404</emoticon>
-	<emoticonurl>https://duf7tkmfho2jb.cloudfront.net /emoji/20191007175815/detail/04.png < /emoticonurl>
-	<emoticontext>텍스트 내용을 이 곳에 추가</emoticontext></message>
+		to = "91b3730a-cfc6-4aec-b292-7090e2a89652@lubigmuc.xmpp.lubig.co.kr"
+		msgtype = "file"
+		id = "F9158CFA-E77D-4892-9A3D-9372DBB018FE"
+		nick = "다리우스skskdkdjdjd"
+		filetype = "emoticon"
+		jid = "c4edd7d2dac84135ad5a660739fa2a8c@xmpp.lubig.co.kr"
+		roomid = "518AA056-7CBB-4633-8BAF-4707D6926466"
+		date = "2020-06-02T08:10:44.801Z"> 
+		<body>emoticon<body/>
+		<emoticon>23404</emoticon>
+		<emoticonurl>https://duf7tkmfho2jb.cloudfront.net /emoji/20191007175815/detail/04.png </emoticonurl>
+		<emoticontext>텍스트 내용을 이 곳에 추가</emoticontext>
+	</message>
     ```
   - 투표 등록   
     ```xml      
@@ -81,125 +83,83 @@
             </vote>
         </message>
     ```
-  - 이모티콘   
+  - 투표 취소   
     ```xml      
-	<message type = "groupchat"
-	to = "91b3730a-cfc6-4aec-b292-7090e2a89652@lubigmuc.xmpp.lubig.co.kr"
-	msgtype = "file"
-	id = "F9158CFA-E77D-4892-9A3D-9372DBB018FE"
-	nick = "다리우스skskdkdjdjd"
-	filetype = "emoticon"
-	jid = "c4edd7d2dac84135ad5a660739fa2a8c@xmpp.lubig.co.kr"
-	roomid = "518AA056-7CBB-4633-8BAF-4707D6926466"
-	date = "2020-06-02T08:10:44.801Z"> <body>emoticon<body/>
-	<emoticon>23404</emoticon>
-	<emoticonurl>https://duf7tkmfho2jb.cloudfront.net /emoji/20191007175815/detail/04.png < /emoticonurl>
-	<emoticontext>텍스트 내용을 이 곳에 추가</emoticontext></message>
+	<message xmlns="jabber:client" msgtype="none" filetype="none" type="groupchat" date="2020-06-17T05:10:56.788Z"
+            nick="김동언 : 김동언" jid="8f78d4642cf44bee9dfad5ca086fcef3@xmpp.lubig.co.kr"
+            to="c4edd7d2dac84135ad5a660739fa2a8c@xmpp.lubig.co.kr/CAMP_MOBILE" id="3037ee48-cb2a-45bd-99d8-ef12d254e771"
+            from="95995593-0bd0-40de-b73e-73c22be07e46@lubigmuc.xmpp.lubig.co.kr/8f78d4642cf44bee9dfad5ca086fcef3"
+            resource="CAMP_MOBILE">
+            <body>[투표취소] : 2</body>
+            <vote seq="973" status="delete" title="2" />
+        </message>
     ```
-  - 이모티콘   
+  - 투표 종료   
     ```xml      
-	<message type = "groupchat"
-	to = "91b3730a-cfc6-4aec-b292-7090e2a89652@lubigmuc.xmpp.lubig.co.kr"
-	msgtype = "file"
-	id = "F9158CFA-E77D-4892-9A3D-9372DBB018FE"
-	nick = "다리우스skskdkdjdjd"
-	filetype = "emoticon"
-	jid = "c4edd7d2dac84135ad5a660739fa2a8c@xmpp.lubig.co.kr"
-	roomid = "518AA056-7CBB-4633-8BAF-4707D6926466"
-	date = "2020-06-02T08:10:44.801Z"> <body>emoticon<body/>
-	<emoticon>23404</emoticon>
-	<emoticonurl>https://duf7tkmfho2jb.cloudfront.net /emoji/20191007175815/detail/04.png < /emoticonurl>
-	<emoticontext>텍스트 내용을 이 곳에 추가</emoticontext></message>
+	<message xmlns="jabber:client" msgtype="none" filetype="none" type="groupchat" date="2020-06-17T05:10:38.517Z"
+            nick="김동언 : 김동언" jid="8f78d4642cf44bee9dfad5ca086fcef3@xmpp.lubig.co.kr"
+            to="c4edd7d2dac84135ad5a660739fa2a8c@xmpp.lubig.co.kr/CAMP_MOBILE" id="95224df9-65eb-4764-8be2-201b0e0ed0fd"
+            from="95995593-0bd0-40de-b73e-73c22be07e46@lubigmuc.xmpp.lubig.co.kr/8f78d4642cf44bee9dfad5ca086fcef3"
+            resource="CAMP_MOBILE">
+            <body>[투표종료] : 1</body>
+            <vote status="close" seq="972" notice="N" type="text" title="1">
+                <item rank="0" imgurl="">1</item>
+                <item rank="0" imgurl="">2</item>
+                <item rank="0" imgurl="">3</item>
+            </vote>
+        </message>
     ```
-  - 이모티콘   
+  - 부캠프장 설정   
     ```xml      
-	<message type = "groupchat"
-	to = "91b3730a-cfc6-4aec-b292-7090e2a89652@lubigmuc.xmpp.lubig.co.kr"
-	msgtype = "file"
-	id = "F9158CFA-E77D-4892-9A3D-9372DBB018FE"
-	nick = "다리우스skskdkdjdjd"
-	filetype = "emoticon"
-	jid = "c4edd7d2dac84135ad5a660739fa2a8c@xmpp.lubig.co.kr"
-	roomid = "518AA056-7CBB-4633-8BAF-4707D6926466"
-	date = "2020-06-02T08:10:44.801Z"> <body>emoticon<body/>
-	<emoticon>23404</emoticon>
-	<emoticonurl>https://duf7tkmfho2jb.cloudfront.net /emoji/20191007175815/detail/04.png < /emoticonurl>
-	<emoticontext>텍스트 내용을 이 곳에 추가</emoticontext></message>
+	<message xmlns="jabber:client" msgtype="none" filetype="none" type="groupchat" nick="다리우스skskdkdjdjd"
+            jid="c4edd7d2dac84135ad5a660739fa2a8c@xmpp.lubig.co.kr"
+            to="c4edd7d2dac84135ad5a660739fa2a8c@xmpp.lubig.co.kr/CAMP_MOBILE" id="0b19b3c1-f9c1-47fa-955d-799bd14afad4"
+            from="10f1fd2d-f8b7-4b4a-9503-323bf74eb284@lubigmuc.xmpp.lubig.co.kr/다리우스skskdkdjdjd"
+            date="2020-06-17T06:35:22.447Z" roomid="17C99E25-01A2-4838-8367-C2D43D1DE1E6"
+            resource="c4edd7d2dac84135ad5a660739fa2a8c">
+            <body>camptransfer</body>
+            <force campregno="1334" roomtitle="shajsjsiopo" to="8f78d4642cf44bee9dfad5ca086fcef3@xmpp.lubig.co.kr"
+                nick="김동언 : 김동언" memberlevel="2" type="set" />
+            <force campregno="1334" roomtitle="shajsjsiopo" to="46b81db63f3a433cb1f36afbf86c7b20@xmpp.lubig.co.kr"
+                nick="QAtest70입니다." memberlevel="2" type="set" />
+        </message>
     ```
-  - 이모티콘   
+  - 부캠프장 해제   
     ```xml      
-	<message type = "groupchat"
-	to = "91b3730a-cfc6-4aec-b292-7090e2a89652@lubigmuc.xmpp.lubig.co.kr"
-	msgtype = "file"
-	id = "F9158CFA-E77D-4892-9A3D-9372DBB018FE"
-	nick = "다리우스skskdkdjdjd"
-	filetype = "emoticon"
-	jid = "c4edd7d2dac84135ad5a660739fa2a8c@xmpp.lubig.co.kr"
-	roomid = "518AA056-7CBB-4633-8BAF-4707D6926466"
-	date = "2020-06-02T08:10:44.801Z"> <body>emoticon<body/>
-	<emoticon>23404</emoticon>
-	<emoticonurl>https://duf7tkmfho2jb.cloudfront.net /emoji/20191007175815/detail/04.png < /emoticonurl>
-	<emoticontext>텍스트 내용을 이 곳에 추가</emoticontext></message>
+	<message xmlns="jabber:client" msgtype="none" filetype="none" type="groupchat" nick="다리우스skskdkdjdjd"
+            jid="c4edd7d2dac84135ad5a660739fa2a8c@xmpp.lubig.co.kr"
+            to="c4edd7d2dac84135ad5a660739fa2a8c@xmpp.lubig.co.kr/CAMP_MOBILE" id="c0a0425b-61b4-4c1f-a1f6-d611dfafc134"
+            from="10f1fd2d-f8b7-4b4a-9503-323bf74eb284@lubigmuc.xmpp.lubig.co.kr/다리우스skskdkdjdjd"
+            date="2020-06-17T06:35:48.232Z" roomid="17C99E25-01A2-4838-8367-C2D43D1DE1E6"
+            resource="c4edd7d2dac84135ad5a660739fa2a8c">
+            <body>camptransfer</body>
+            <force campregno="1334" roomtitle="shajsjsiopo" to="" nick="" memberlevel="2" type="remove" />
+        </message>
     ```
-  - 이모티콘   
+  - 캠프장 이관  
     ```xml      
-	<message type = "groupchat"
-	to = "91b3730a-cfc6-4aec-b292-7090e2a89652@lubigmuc.xmpp.lubig.co.kr"
-	msgtype = "file"
-	id = "F9158CFA-E77D-4892-9A3D-9372DBB018FE"
-	nick = "다리우스skskdkdjdjd"
-	filetype = "emoticon"
-	jid = "c4edd7d2dac84135ad5a660739fa2a8c@xmpp.lubig.co.kr"
-	roomid = "518AA056-7CBB-4633-8BAF-4707D6926466"
-	date = "2020-06-02T08:10:44.801Z"> <body>emoticon<body/>
-	<emoticon>23404</emoticon>
-	<emoticonurl>https://duf7tkmfho2jb.cloudfront.net /emoji/20191007175815/detail/04.png < /emoticonurl>
-	<emoticontext>텍스트 내용을 이 곳에 추가</emoticontext></message>
+	<message xmlns="jabber:client" msgtype="none" filetype="none" type="groupchat" nick="다리우스skskdkdjdjd"
+	        jid="c4edd7d2dac84135ad5a660739fa2a8c@xmpp.lubig.co.kr"
+	        to="c4edd7d2dac84135ad5a660739fa2a8c@xmpp.lubig.co.kr/CAMP_MOBILE" id="4f043712-0f92-4643-bc1d-9d5b7a0fb192"
+	        from="10f1fd2d-f8b7-4b4a-9503-323bf74eb284@lubigmuc.xmpp.lubig.co.kr/다리우스skskdkdjdjd"
+	        date="2020-06-17T07:07:45.948Z" roomid="17C99E25-01A2-4838-8367-C2D43D1DE1E6"
+	        resource="c4edd7d2dac84135ad5a660739fa2a8c">
+	        <body>camptransfer</body>
+	        <force campregno="1334" roomtitle="shajsjsiopo" to="8f78d4642cf44bee9dfad5ca086fcef3@xmpp.lubig.co.kr"
+        	nick="김동언 : 김동언" memberlevel="1" type="change" />
+        </message>
     ```
-  - 이모티콘   
+  - 캠프회원 강퇴   
     ```xml      
-	<message type = "groupchat"
-	to = "91b3730a-cfc6-4aec-b292-7090e2a89652@lubigmuc.xmpp.lubig.co.kr"
-	msgtype = "file"
-	id = "F9158CFA-E77D-4892-9A3D-9372DBB018FE"
-	nick = "다리우스skskdkdjdjd"
-	filetype = "emoticon"
-	jid = "c4edd7d2dac84135ad5a660739fa2a8c@xmpp.lubig.co.kr"
-	roomid = "518AA056-7CBB-4633-8BAF-4707D6926466"
-	date = "2020-06-02T08:10:44.801Z"> <body>emoticon<body/>
-	<emoticon>23404</emoticon>
-	<emoticonurl>https://duf7tkmfho2jb.cloudfront.net /emoji/20191007175815/detail/04.png < /emoticonurl>
-	<emoticontext>텍스트 내용을 이 곳에 추가</emoticontext></message>
-    ```
-  - 이모티콘   
-    ```xml      
-	<message type = "groupchat"
-	to = "91b3730a-cfc6-4aec-b292-7090e2a89652@lubigmuc.xmpp.lubig.co.kr"
-	msgtype = "file"
-	id = "F9158CFA-E77D-4892-9A3D-9372DBB018FE"
-	nick = "다리우스skskdkdjdjd"
-	filetype = "emoticon"
-	jid = "c4edd7d2dac84135ad5a660739fa2a8c@xmpp.lubig.co.kr"
-	roomid = "518AA056-7CBB-4633-8BAF-4707D6926466"
-	date = "2020-06-02T08:10:44.801Z"> <body>emoticon<body/>
-	<emoticon>23404</emoticon>
-	<emoticonurl>https://duf7tkmfho2jb.cloudfront.net /emoji/20191007175815/detail/04.png < /emoticonurl>
-	<emoticontext>텍스트 내용을 이 곳에 추가</emoticontext></message>
-    ```
-  - 이모티콘   
-    ```xml      
-	<message type = "groupchat"
-	to = "91b3730a-cfc6-4aec-b292-7090e2a89652@lubigmuc.xmpp.lubig.co.kr"
-	msgtype = "file"
-	id = "F9158CFA-E77D-4892-9A3D-9372DBB018FE"
-	nick = "다리우스skskdkdjdjd"
-	filetype = "emoticon"
-	jid = "c4edd7d2dac84135ad5a660739fa2a8c@xmpp.lubig.co.kr"
-	roomid = "518AA056-7CBB-4633-8BAF-4707D6926466"
-	date = "2020-06-02T08:10:44.801Z"> <body>emoticon<body/>
-	<emoticon>23404</emoticon>
-	<emoticonurl>https://duf7tkmfho2jb.cloudfront.net /emoji/20191007175815/detail/04.png < /emoticonurl>
-	<emoticontext>텍스트 내용을 이 곳에 추가</emoticontext></message>
+	<message xmlns="jabber:client" msgtype="none" filetype="none" type="groupchat" nick="다리우스skskdkdjdjd"
+            jid="c4edd7d2dac84135ad5a660739fa2a8c@xmpp.lubig.co.kr" roomid="10f1fd2d-f8b7-4b4a-9503-323bf74eb284"
+            to="c4edd7d2dac84135ad5a660739fa2a8c@xmpp.lubig.co.kr/CAMP_MOBILE" id="b4682666-e2e2-48ae-81ac-cab4dafde3c1"
+            from="10f1fd2d-f8b7-4b4a-9503-323bf74eb284@lubigmuc.xmpp.lubig.co.kr/다리우스skskdkdjdjd"
+            date="2020-06-17T07:11:54Z" resource="c4edd7d2dac84135ad5a660739fa2a8c">
+            <body>forceexit</body>
+            <force to="46b81db63f3a433cb1f36afbf86c7b20@xmpp.lubig.co.kr" campregno="1334" roomtitle="shajsjsiopo"
+                nick="QAtest70입니다." />
+        </message>
     ```
   - 이모티콘   
     ```xml      
