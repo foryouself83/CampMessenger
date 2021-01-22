@@ -36,20 +36,20 @@
     
     if (!xmpp.XmppConnect())
     {
-                        for (int i = 0; i < 2; i++)
-                        {
-                            if (!xmpp.XmppRetryConnect())
-                            {
-                                Messenger.Default.Send(new NotificationMessage("Logout"));
-                                System.Windows.Application.Current.Dispatcher.Invoke(() =>
-                                {
-                                    log.WriteLog(LogType.Error, System.Reflection.MethodBase.GetCurrentMethod(), "XmppConnect failed.");
-                                    sys.OpenMessageBox("채팅 서버 연결에 실패하였습니다.", "", MessageBoxButton.OK);
-                                });
-                                return;
-                            }
-                        }
-                    }
+	for (int i = 0; i < 2; i++)
+	{
+		if (!xmpp.XmppRetryConnect())
+		{
+			Messenger.Default.Send(new NotificationMessage("Logout"));
+			System.Windows.Application.Current.Dispatcher.Invoke(() =>
+			{
+				log.WriteLog(LogType.Error, System.Reflection.MethodBase.GetCurrentMethod(), "XmppConnect failed.");
+				sys.OpenMessageBox("채팅 서버 연결에 실패하였습니다.", "", MessageBoxButton.OK);
+			});
+			return;
+		}
+	}
+     }
     ```
     
 ## API  
