@@ -243,21 +243,69 @@
                 campmemberprofileyn="N" servicetype="" />
 	</message>
     ```
-  -    
+  - 일정 등록    
     ```xml      
-	
+	<message xmlns="jabber:client" msgtype="none" filetype="none" type="groupchat" nick="다리우스skskdkdjdjd"
+		 jid="c4edd7d2dac84135ad5a660739fa2a8c@xmpp.lubig.co.kr"
+		 to="c4edd7d2dac84135ad5a660739fa2a8c@xmpp.lubig.co.kr/CAMP_MOBILE" id="c0a0425b-61b4-4c1f-a1f6-d611dfafc134"
+		 from="10f1fd2d-f8b7-4b4a-9503-323bf74eb284@lubigmuc.xmpp.lubig.co.kr/다리우스skskdkdjdjd"
+		 date="2020-06-17T06:35:48.232Z" roomid="17C99E25-01A2-4838-8367-C2D43D1DE1E6"
+		 resource="c4edd7d2dac84135ad5a660739fa2a8c">	
+		<body>일정이 등록되었습니다.</body>
+		<schedule type="registration" seq="89" startDate="2020-09-09T05:35:58." endDate="2020-09-09T05:35:58" 
+			  allDayYn="Y" color="4" to="1ccda7b18bad4e0787f915d80c0ee3e1">
+			<title>제목</title>
+			<desc>설명문</desc>
+			<alarm date="2020-09-09T05:35:58" text="10분"/>
+			<alarm date="2020-09-09T05:35:58" text="10분" />
+		</schedule>
+	</message>
     ```
-  -    
+  - 일정 공유   
     ```xml      
-	
+	<message xmlns="jabber:client" msgtype="none" filetype="none" type="groupchat" nick="다리우스skskdkdjdjd"
+		 jid="c4edd7d2dac84135ad5a660739fa2a8c@xmpp.lubig.co.kr"
+		 to="c4edd7d2dac84135ad5a660739fa2a8c@xmpp.lubig.co.kr/CAMP_MOBILE" id="c0a0425b-61b4-4c1f-a1f6-d611dfafc134"
+		 from="10f1fd2d-f8b7-4b4a-9503-323bf74eb284@lubigmuc.xmpp.lubig.co.kr/다리우스skskdkdjdjd"
+		 date="2020-06-17T06:35:48.232Z" roomid="17C99E25-01A2-4838-8367-C2D43D1DE1E6"
+		 resource="c4edd7d2dac84135ad5a660739fa2a8c">	
+		<body>일정이 공유되었습니다.</body>
+		<schedule type="share" seq="90" startDate="2020-09-09T05:35:58" endDate="2020-09-09T05:35:58"  to="1ccda7b18bad4e0787f915d80c0ee3e1">
+			<title>제목</title>
+			<desc>설명문</desc>
+			<alarm date="2020-09-09T05:35:58" text="10분"/>
+			<alarm date="2020-09-09T05:35:58" text="10분" />
+		</schedule>
+	</message>
     ```
-  -    
+  - 일정 알림   
     ```xml      
-	
+	<message xmlns="jabber:client" msgtype="none" filetype="none" type="groupchat" nick="다리우스skskdkdjdjd"
+		 jid="c4edd7d2dac84135ad5a660739fa2a8c@xmpp.lubig.co.kr"
+		 to="c4edd7d2dac84135ad5a660739fa2a8c@xmpp.lubig.co.kr/CAMP_MOBILE" id="c0a0425b-61b4-4c1f-a1f6-d611dfafc134"
+		 from="10f1fd2d-f8b7-4b4a-9503-323bf74eb284@lubigmuc.xmpp.lubig.co.kr/다리우스skskdkdjdjd"
+		 date="2020-06-17T06:35:48.232Z" roomid="17C99E25-01A2-4838-8367-C2D43D1DE1E6"
+		 resource="c4edd7d2dac84135ad5a660739fa2a8c">	
+		<body>10분 후 일정이 있습니다.</body>
+		<schedule type="notice" seq="89" startDate="2020-09-09T05:35:58" endDate="2020-09-09T05:35:58" to="1ccda7b18bad4e0787f915d80c0ee3e1"
+			  sysUserProfileUrl="">
+			<title>제목</title>
+			<desc>설명문</desc>
+			<alarm date="2020-09-09T05:35:58" text="10분"/>
+			<alarm date="2020-09-09T05:35:58" text="10분" />
+		</schedule>
+	</message>
     ```
-  -    
+  - 선물하기   
     ```xml      
-	
+	<message to='c9bc8010584b4580ac91405b0e4e706b@xmpp.lubig.co.kr' id='T2W2N-09301750' 
+		 type='chat' msgtype='none' filetype='none' date='2019-10-07T03:27:42.102Z'  nick='LeeCheol ho'
+		 from='9d6a86cebc224ab0ba3cd09c46b27a65@xmpp.lubig.co.kr/CAMP_MOBILE'>
+		<body>present</body>
+		<present presenttype='coupon' thumbnail='http://img.giftting.co.kr/goods/G00000117157/G00000117157_250.jpg' 
+			 itemname='치킨세트' productid='G00000104532' to='c9bc8010584b4580ac91405b0e4e706b'>치킨 선물이야~ 맛있게 먹어~~ ^^
+		</present>
+	</message>
     ```
  
 ## API  
