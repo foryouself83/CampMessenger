@@ -127,11 +127,11 @@
   - 참조 코드   
     ```csharp        
     if (!UpdateManager.Instanse().AutoUpdate(out errorMsg))
-	{
-		login.Login = false;
-		AlarmText = errMsg = "프로그램 업데이트가 필요합니다.";
-		return;
-	}
+    {
+	login.Login = false;
+	AlarmText = errMsg = "프로그램 업데이트가 필요합니다.";
+	return;
+    }
     ```
     
 # 미비 사항
