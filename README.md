@@ -32,7 +32,7 @@
     ```
   - 참조 코드   
     ```csharp   
-    XMPPManager
+    var xmpp = XMPPManager.Instanse();
     
 	if (!xmpp.XmppConnect())
 	{
@@ -52,9 +52,8 @@
 	}
     ```
 ## 메시지
-  - 이모티콘     
+  - 이모티콘   
     ```xml   
-
 <message type = "groupchat"
 to = "91b3730a-cfc6-4aec-b292-7090e2a89652@lubigmuc.xmpp.lubig.co.kr"
 msgtype = "file"
