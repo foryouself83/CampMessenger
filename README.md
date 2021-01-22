@@ -72,7 +72,7 @@
     login.Login = api.SendLoginAPI(LoginID, strPassword, out errMsg);
     if (login.Login == false)
     {
-	AlarmText = errMsg;
+		AlarmText = errMsg;
     }
     ```
     
