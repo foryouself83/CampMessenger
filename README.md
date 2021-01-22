@@ -53,7 +53,7 @@
     ```
 ## 메시지
   - 참조 코드   
-    ```csharp   
+    ```xml      
     var login = LoginManager.Instanse();
     var api = LubigAPIManager.Instanse();
     
