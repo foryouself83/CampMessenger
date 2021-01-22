@@ -51,7 +51,16 @@
 		}
 	}
     ```
-## 메시지
+## Message Stanza  
+  - 이모티콘   
+    ```xml      
+	<message xmlns="jabber:client" type="groupchat" to="daeba3a140e54f7ca5990bb953276cb6@xmpp.lubig.co.kr/CAMP_MOBILE" 
+		 id="69C76EEADF28-4330-8FAC-45786C2CF2EE" nick="일이삼사오"msgtype="none" filetype="none"
+		 jid="f0f5eab6ae4c47aa8d1d709cdaab98b9@xmpp.lubig.co.kr" roomid="F9ABBCC8-3BE7-4C12-9E0C-7A256BE75045" 
+		 date="2019-09-26T06:09:00.809Z" from="ecbf173e-0b78-4abaa1c6-9ecf8eb93425@lubigmuc.xmpp.lubig.co.kr/f0f5eab6ae4c47aa8d1d709cdaab98b9">
+		<body>join</body><joining to="f0f5eab6ae4c47aa8d1d709cdaab98b9@xmpp.lubig.co.kr" nick="일이삼사오"/>
+	</message>
+    ```  
   - 이모티콘   
     ```xml      
 	<message type="groupchat"
