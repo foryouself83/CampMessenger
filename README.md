@@ -53,7 +53,7 @@
     ```
 ## 메시지
   - 이모티콘
-	``` xml
+``` xml
 < message type = "groupchat"
 to = "91b3730a-cfc6-4aec-b292-7090e2a89652@lubigmuc.xmpp.lubig.co.kr"
 msgtype = "file"
@@ -63,7 +63,7 @@ filetype = "emoticon"
 jid = "c4edd7d2dac84135ad5a660739fa2a8c@xmpp.lubig.co.kr"
 roomid = "518AA056-7CBB-4633-8BAF-4707D6926466"
 date = "2020-06-02T08:10:44.801Z"> <body>emoticon<body/><emoticon>23404</emoticon><emoticonurl>https://duf7tkmfho2jb.cloudfront.net /emoji/20191007175815/detail/04.png < /emoticonurl><emoticontext>텍스트 내용을 이 곳에 추가</emoticontext></message>
-	```
+```
 
 ## API  
   - Address
