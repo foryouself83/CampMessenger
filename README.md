@@ -52,6 +52,15 @@
 	}
     ```
 ## Message Stanza  
+  - 일반 메시지    
+    ```xml      
+	<message type="groupchat" to="545d2831-d85a-4b0ba1cf-acf2ee803e76@lubigmuc.xmpp.lubig.co.kr" msgtype="text" 
+		 id="A45AB32E-A48D-4190-9389-A2161FBEE46D" nick="아이폰10" filetype="none" 
+		 jid="daeba3a140e54f7ca5990bb953276cb6@xmpp.lubig.co.kr" 
+		 roomid="0A9E62BD-19CB-45D6-9133-3703504237AB" date="2019-09-26T06:00:55.733Z">
+		<body>test</body>
+	</message>
+    ```  
   - 대화방 진입   
     ```xml      
 	<message xmlns="jabber:client" type="groupchat" to="daeba3a140e54f7ca5990bb953276cb6@xmpp.lubig.co.kr/CAMP_MOBILE" 
@@ -66,34 +75,40 @@
 	<message xmlns="jabber:client" type="groupchat" to="daeba3a140e54f7ca5990bb953276cb6@xmpp.lubig.co.kr/CAMP_MOBILE" 
 		 id="2145AF6F-A890-431E-9AC2-C3E494BE9355" nick="김동언13" lastid="A45AB32EA48D-4190-9389-A2161FBEE46D" msgtype="read"
 		 jid="8f78d4642cf44bee9dfad5ca086fcef3@xmpp.lubig.co.kr" roomid="5895A694-E859-4E43-848A-6AD199B5D4AA" 
-		 date="2019-09-26T06:00:56.351Z" from="545d2831-d85a-4b0b-a1cf-acf2ee803e76@lubigmuc.xmpp.lubig.co.kr/8f78d4642cf44bee9dfad5ca086fcef3"><readchat/></
-message>
-    ```  
-  - 대화방 진입   
-    ```xml      
-	<message xmlns="jabber:client" type="groupchat" to="daeba3a140e54f7ca5990bb953276cb6@xmpp.lubig.co.kr/CAMP_MOBILE" 
-		 id="69C76EEADF28-4330-8FAC-45786C2CF2EE" nick="일이삼사오"msgtype="none" filetype="none"
-		 jid="f0f5eab6ae4c47aa8d1d709cdaab98b9@xmpp.lubig.co.kr" roomid="F9ABBCC8-3BE7-4C12-9E0C-7A256BE75045" 
-		 date="2019-09-26T06:09:00.809Z" from="ecbf173e-0b78-4abaa1c6-9ecf8eb93425@lubigmuc.xmpp.lubig.co.kr/f0f5eab6ae4c47aa8d1d709cdaab98b9">
-		<body>join</body><joining to="f0f5eab6ae4c47aa8d1d709cdaab98b9@xmpp.lubig.co.kr" nick="일이삼사오"/>
+		 date="2019-09-26T06:00:56.351Z" from="545d2831-d85a-4b0b-a1cf-acf2ee803e76@lubigmuc.xmpp.lubig.co.kr/8f78d4642cf44bee9dfad5ca086fcef3">
+		<readchat/>
 	</message>
     ```  
-  - 대화방 진입   
+  - 이미지   
     ```xml      
-	<message xmlns="jabber:client" type="groupchat" to="daeba3a140e54f7ca5990bb953276cb6@xmpp.lubig.co.kr/CAMP_MOBILE" 
-		 id="69C76EEADF28-4330-8FAC-45786C2CF2EE" nick="일이삼사오"msgtype="none" filetype="none"
-		 jid="f0f5eab6ae4c47aa8d1d709cdaab98b9@xmpp.lubig.co.kr" roomid="F9ABBCC8-3BE7-4C12-9E0C-7A256BE75045" 
-		 date="2019-09-26T06:09:00.809Z" from="ecbf173e-0b78-4abaa1c6-9ecf8eb93425@lubigmuc.xmpp.lubig.co.kr/f0f5eab6ae4c47aa8d1d709cdaab98b9">
-		<body>join</body><joining to="f0f5eab6ae4c47aa8d1d709cdaab98b9@xmpp.lubig.co.kr" nick="일이삼사오"/>
+	<message type="groupchat" to="545d2831-d85a-4b0ba1cf-acf2ee803e76@lubigmuc.xmpp.lubig.co.kr" msgtype="file"
+		 id="959808FB-7BAC-400F-84DB-02E93522302E" nick="아이폰10" filetype="image" 
+		 jid="daeba3a140e54f7ca5990bb953276cb6@xmpp.lubig.co.kr" roomid="0A9E62BD-19CB-45D6-9133-3703504237AB"
+		 date="2019-09-26T06:03:42.470Z">
+		<body>image</body>
+		<image width="640" height="1386" size="2850797" 
+		       url="https://duf7tkmfho2jb.cloudfront.net/chat/b71bc87bc51ff3008e56b0362f0e19ef/cfa5301358b9fcbe7aa45b1ceea088c6/image/9C6C89E0-49E6-4CC7-B688-EEF4D61EA7AEL0001.jpg"
+		       thumbnailurl="https://duf7tkmfho2jb.cloudfront.net/chat/b71bc87bc51ff3008e56b0362f0e19ef/cfa5301358b9fcbe7aa45b1ceea088c6/image/thumbnail/9C6C89E0-49E6-4CC7-B688-EEF4D61EA7AEL0001_thumb.jpg"/>
 	</message>
     ```  
-  - 대화방 진입   
+  - 동영상   
     ```xml      
-	<message xmlns="jabber:client" type="groupchat" to="daeba3a140e54f7ca5990bb953276cb6@xmpp.lubig.co.kr/CAMP_MOBILE" 
-		 id="69C76EEADF28-4330-8FAC-45786C2CF2EE" nick="일이삼사오"msgtype="none" filetype="none"
-		 jid="f0f5eab6ae4c47aa8d1d709cdaab98b9@xmpp.lubig.co.kr" roomid="F9ABBCC8-3BE7-4C12-9E0C-7A256BE75045" 
-		 date="2019-09-26T06:09:00.809Z" from="ecbf173e-0b78-4abaa1c6-9ecf8eb93425@lubigmuc.xmpp.lubig.co.kr/f0f5eab6ae4c47aa8d1d709cdaab98b9">
-		<body>join</body><joining to="f0f5eab6ae4c47aa8d1d709cdaab98b9@xmpp.lubig.co.kr" nick="일이삼사오"/>
+	<message type="groupchat" to="545d2831-d85a-4b0ba1cf-acf2ee803e76@lubigmuc.xmpp.lubig.co.kr" msgtype="file" 
+		 id="A163DE9AB371-4313-879A-011960F1B9D6" nick="아이폰10" filetype="vod" jid="daeba3a140e54f7ca5990bb953276cb6@xmpp.lubig.co.kr" 
+		 roomid="0A9E62BD-19CB-45D6-9133-3703504237AB" date="2019-09-26T06:04:03.194Z">
+		<body>vod</body>
+		<vod width="404" height="720" size="1091187" 
+		     url="https://duf7tkmfho2jb.cloudfront.net/chat/b71bc87bc51ff3008e56b0362f0e19ef/cfa5301358b9fcbe7aa45b1ceea088c6/vod/C32AAF39-A4EE-46A3-9B96-7C958799611EL0001_1569477843.mp4"
+		     thumbnailurl="https://duf7tkmfho2jb.cloudfront.net/chat/b71bc87bc51ff3008e56b0362f0e19ef/cfa5301358b9fcbe7aa45b1ceea088c6/vod/thumbnail/C32AAF39-A4EE-46A3-9B96-7C958799611EL0001_1569477843.jpg" duration="11000"/>
+	</message>
+    ```  
+  - 지도   
+    ```xml      
+	<message type="groupchat" to="545d2831-d85a-4b0ba1cf-acf2ee803e76@lubigmuc.xmpp.lubig.co.kr" msgtype="file"
+		 id="93E1E919-78B4-404A-9477-3DAB92F9D24A" nick="아이폰10" filetype="map" jid="daeba3a140e54f7ca5990bb953276cb6@xmpp.lubig.co.kr" 
+		 roomid="0A9E62BD-19CB-45D6-9133-3703504237AB" date="2019-09-26T06:04:25.331Z">
+		<body>map</body>
+		<map latitude="37.482317" longitude="126.893794" address="서울특별시 구로구 구로동 235-5"/>
 	</message>
     ```  
   - 이모티콘   
