@@ -52,7 +52,42 @@
 	}
     ```
 ## Message Stanza  
-  - 이모티콘   
+  - 대화방 진입   
+    ```xml      
+	<message xmlns="jabber:client" type="groupchat" to="daeba3a140e54f7ca5990bb953276cb6@xmpp.lubig.co.kr/CAMP_MOBILE" 
+		 id="69C76EEADF28-4330-8FAC-45786C2CF2EE" nick="일이삼사오"msgtype="none" filetype="none"
+		 jid="f0f5eab6ae4c47aa8d1d709cdaab98b9@xmpp.lubig.co.kr" roomid="F9ABBCC8-3BE7-4C12-9E0C-7A256BE75045" 
+		 date="2019-09-26T06:09:00.809Z" from="ecbf173e-0b78-4abaa1c6-9ecf8eb93425@lubigmuc.xmpp.lubig.co.kr/f0f5eab6ae4c47aa8d1d709cdaab98b9">
+		<body>join</body><joining to="f0f5eab6ae4c47aa8d1d709cdaab98b9@xmpp.lubig.co.kr" nick="일이삼사오"/>
+	</message>
+    ```  
+  - 메시지 읽음   
+    ```xml      
+	<message xmlns="jabber:client" type="groupchat" to="daeba3a140e54f7ca5990bb953276cb6@xmpp.lubig.co.kr/CAMP_MOBILE" 
+		 id="2145AF6F-A890-431E-9AC2-C3E494BE9355" nick="김동언13" lastid="A45AB32EA48D-4190-9389-A2161FBEE46D" msgtype="read"
+		 jid="8f78d4642cf44bee9dfad5ca086fcef3@xmpp.lubig.co.kr" roomid="5895A694-E859-4E43-848A-6AD199B5D4AA" 
+		 date="2019-09-26T06:00:56.351Z" from="545d2831-d85a-4b0b-a1cf-acf2ee803e76@lubigmuc.xmpp.lubig.co.kr/8f78d4642cf44bee9dfad5ca086fcef3"><readchat/></
+message>
+    ```  
+  - 대화방 진입   
+    ```xml      
+	<message xmlns="jabber:client" type="groupchat" to="daeba3a140e54f7ca5990bb953276cb6@xmpp.lubig.co.kr/CAMP_MOBILE" 
+		 id="69C76EEADF28-4330-8FAC-45786C2CF2EE" nick="일이삼사오"msgtype="none" filetype="none"
+		 jid="f0f5eab6ae4c47aa8d1d709cdaab98b9@xmpp.lubig.co.kr" roomid="F9ABBCC8-3BE7-4C12-9E0C-7A256BE75045" 
+		 date="2019-09-26T06:09:00.809Z" from="ecbf173e-0b78-4abaa1c6-9ecf8eb93425@lubigmuc.xmpp.lubig.co.kr/f0f5eab6ae4c47aa8d1d709cdaab98b9">
+		<body>join</body><joining to="f0f5eab6ae4c47aa8d1d709cdaab98b9@xmpp.lubig.co.kr" nick="일이삼사오"/>
+	</message>
+    ```  
+  - 대화방 진입   
+    ```xml      
+	<message xmlns="jabber:client" type="groupchat" to="daeba3a140e54f7ca5990bb953276cb6@xmpp.lubig.co.kr/CAMP_MOBILE" 
+		 id="69C76EEADF28-4330-8FAC-45786C2CF2EE" nick="일이삼사오"msgtype="none" filetype="none"
+		 jid="f0f5eab6ae4c47aa8d1d709cdaab98b9@xmpp.lubig.co.kr" roomid="F9ABBCC8-3BE7-4C12-9E0C-7A256BE75045" 
+		 date="2019-09-26T06:09:00.809Z" from="ecbf173e-0b78-4abaa1c6-9ecf8eb93425@lubigmuc.xmpp.lubig.co.kr/f0f5eab6ae4c47aa8d1d709cdaab98b9">
+		<body>join</body><joining to="f0f5eab6ae4c47aa8d1d709cdaab98b9@xmpp.lubig.co.kr" nick="일이삼사오"/>
+	</message>
+    ```  
+  - 대화방 진입   
     ```xml      
 	<message xmlns="jabber:client" type="groupchat" to="daeba3a140e54f7ca5990bb953276cb6@xmpp.lubig.co.kr/CAMP_MOBILE" 
 		 id="69C76EEADF28-4330-8FAC-45786C2CF2EE" nick="일이삼사오"msgtype="none" filetype="none"
