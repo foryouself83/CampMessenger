@@ -56,7 +56,38 @@
     ```
 ## Message Stanza  
   텍스트, 이미지, 동영상등 다양한 메시지가 있으며 자세한 사항은 아래를 참고하여 주시기 바랍니다.
-  - 텍스트 메시지    
+
+### 목차
+  > 텍스트
+  > 대화방 진입
+  > 대화방 초대
+  > 대화방 나가기
+  > 메시지 읽음
+  > 이미지
+  > 동영상
+  > 파일
+  > 연락처
+  > 회수
+  > 지도
+  > 이모티콘
+  > 투표 등록
+  > 투표 취소
+  > 투표 종료
+  > 부캠프장 설정
+  > 부캠프장 해제
+  > 캠프장 이관
+  > 캠프회원 강퇴
+  > 예약
+  > 레포트
+  > API 연동
+  > API 연동 해제
+  > API 연동 수정
+  > 캠프 가입
+  > 일정 등록
+  > 일정 공유
+  > 일정 알림
+  > 
+  - 텍스트    
     ```xml      
 	<message type="groupchat" to="545d2831-d85a-4b0ba1cf-acf2ee803e76@lubigmuc.xmpp.lubig.co.kr" msgtype="text" 
 		 id="A45AB32E-A48D-4190-9389-A2161FBEE46D" nick="아이폰10" filetype="none" 
@@ -541,7 +572,7 @@ Lubig sever api를 이용하여 로그인, 친구목록, 대화방 기존 대화
 |대화방 공지사항 게시판|이재웅|-|Master branch에 Commit|
 
 # 참고사항
-## Git
+## 브런치 전략
 ### 브런치 정의
   - Master
     개발용 원격 브런치로 로컬 브런치에서 작업한 기능을 테스트하는 목적으로 사용한다.
@@ -555,15 +586,15 @@ Lubig sever api를 이용하여 로그인, 친구목록, 대화방 기존 대화
   1. 기능 개발 후 Master 브런치에 Commit 후 테스트
   1. 테스트 완료 후 Pre-Production 브런치에 Commit
   
+### 배포
+  1. Prouction 브런치에 버전정보 Tag 추가 후 배포   
+  
 ### 배포 버전 버그 픽스
   1. Production에서 로컬 브런치 생성
   2. 버그 픽스 후 Master 브런치에 Commit 후 테스트
   3. 테스트 완료 후 Pre-Production, Production 브런치에 Commit
   4. Production 브런치에 버전정보 Tag 추가 후 배포
-  
-### 배포
-  1. Prouction 브런치에 버전정보 Tag 추가 후 배포
-  
+    
 ## 배포
 ### 서명 방법
   1. AssemblyInfo.cs 에 AssemblyVersion, AssemblyFileVersion 갱신   
@@ -589,7 +620,7 @@ Lubig sever api를 이용하여 로그인, 친구목록, 대화방 기존 대화
     |x86 upload|업데이트 프로그램|
     |x64 upload|업데이트 프로그램|    
 
-### 시퀀스 다이어그램
-  * 로그인  
+## 시퀀스 다이어그램
+### 로그인  
     <img style="width: 300px; height: 500px" src="https://github.com/foryouself83/testrepo/blob/main/src/Images/Login_seq.png?raw=true"/>
   
