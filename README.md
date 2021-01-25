@@ -29,6 +29,8 @@
     ```
     Sharp.Xmpp 라이브러리의 함수 및 이벤트를 기본으로 커스텀된 메시지를 수/발신한다.   
     채팅방 초대, 메시지 수/발신, 채팅방 정보, 채팅방 참여자 정보 등 채팅의 전반적인 부분을 담당한다.
+    채팅 관련 이벤트, 오류 처리등이 구현되어 있습니다.
+    Git Opensource code에서 현 프로젝트에 맞춰서 일부 수정되어 있사오니 참고하시기 바랍니다.
     ```
   - 참조 코드   
     ```csharp   
@@ -52,7 +54,8 @@
 	}
     ```
 ## Message Stanza  
-  - 일반 메시지    
+  텍스트, 이미지, 동영상등 다양한 메시지가 있으며 자세한 사항은 아래를 참고하여 주시기 바랍니다.
+  - 텍스트 메시지    
     ```xml      
 	<message type="groupchat" to="545d2831-d85a-4b0ba1cf-acf2ee803e76@lubigmuc.xmpp.lubig.co.kr" msgtype="text" 
 		 id="A45AB32E-A48D-4190-9389-A2161FBEE46D" nick="아이폰10" filetype="none" 
@@ -484,8 +487,8 @@
 		return false;
     }
     ```
-  - ERD
-    DB...
+  - ERD   
+    Entity Relationship Diagram으로 클릭하여 확대하거나 저장하면 자세히 볼 수 있습니다.
     <img style="width: 680px; height: 500px" src="https://github.com/foryouself83/testrepo/blob/main/src/Images/PC_Camp_ERD.png?raw=true"/>
     
 ## 자동 업데이트      
