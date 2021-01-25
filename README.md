@@ -3,7 +3,7 @@
 프로그램 개발에 적응하기 위한 편의성을 높이고, 개발 진행 방향에 대해 도움을 주고자 합니다.
 
 # 목차
-> *    
+> * [개발 환경](<https://github.com/foryouself83/testrepo/blob/main/README.md#%EA%B0%9C%EB%B0%9C-%ED%99%98%EA%B2%BD>)   
 > * 주요 기능   
 > * [미비 사항](<https://github.com/foryouself83/testrepo/blob/main/README.md#%EB%AF%B8%EB%B9%84-%EC%82%AC%ED%95%AD>)    
 > * 최근 개발 항목    
