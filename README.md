@@ -5,7 +5,7 @@
 # 목차
 > * 시스템 구성   
 > * 주요 기능   
-> * 미비 사항(<https://github.com/foryouself83/testrepo/blob/main/README.md#%EB%AF%B8%EB%B9%84-%EC%82%AC%ED%95%AD>)    
+> * [미비 사항](<https://github.com/foryouself83/testrepo/blob/main/README.md#%EB%AF%B8%EB%B9%84-%EC%82%AC%ED%95%AD>)    
 > * 최근 개발 항목    
 > * 참고 사항   
 
