@@ -70,6 +70,24 @@
 		<body>join</body><joining to="f0f5eab6ae4c47aa8d1d709cdaab98b9@xmpp.lubig.co.kr" nick="일이삼사오"/>
 	</message>
     ```  
+  - 대화방 초대   
+    ```xml      
+	<message type="groupchat" to="545d2831-d85a-4b0ba1cf-acf2ee803e76@lubigmuc.xmpp.lubig.co.kr" id="C4CB003D-1D03-46D5-A76C-AFF17761E100" 
+		 nick="아이폰10" msgtype="none" filetype="none" jid="daeba3a140e54f7ca5990bb953276cb6@xmpp.lubig.co.kr" 
+		 roomid="0A9E62BD-19CB-45D6-9133-3703504237AB" date="2019-09-26T06:06:05.929Z">
+		<body>invite</body><invitation to="79f6481ce5d44d14b152e76831c3295f@xmpp.lubig.co.kr" nick="캠프사업부QA 강성태 대리"/>
+	</message>
+    ```  
+  - 대화방 나가기   
+    ```xml      
+	<message xmlns="jabber:client" type="groupchat" to="daeba3a140e54f7ca5990bb953276cb6@xmpp.lubig.co.kr/CAMP_MOBILE" 
+		 id="35C901AE-7559-45BC-9699-E0609DC2EE8C" nick="김동언13" msgtype="none" filetype="none" jid="8f78d4642cf44bee9dfad5ca086fcef3@xmpp.lubig.co.kr"
+		 roomid="5895A694-E859-4E43-848A-6AD199B5D4AA" date="2019-09-26T06:07:22.422Z" 
+		 from="545d2831-d85a-4b0b-a1cf-acf2ee803e76@lubigmuc.xmpp.lubig.co.kr/8f78d4642cf44bee9dfad5ca086fcef3">
+		<body>exit</body>
+		<exit to="8f78d4642cf44bee9dfad5ca086fcef3@xmpp.lubig.co.kr"/>
+	</message>
+    ```  
   - 메시지 읽음   
     ```xml      
 	<message xmlns="jabber:client" type="groupchat" to="daeba3a140e54f7ca5990bb953276cb6@xmpp.lubig.co.kr/CAMP_MOBILE" 
@@ -100,6 +118,39 @@
 		<vod width="404" height="720" size="1091187" 
 		     url="https://duf7tkmfho2jb.cloudfront.net/chat/b71bc87bc51ff3008e56b0362f0e19ef/cfa5301358b9fcbe7aa45b1ceea088c6/vod/C32AAF39-A4EE-46A3-9B96-7C958799611EL0001_1569477843.mp4"
 		     thumbnailurl="https://duf7tkmfho2jb.cloudfront.net/chat/b71bc87bc51ff3008e56b0362f0e19ef/cfa5301358b9fcbe7aa45b1ceea088c6/vod/thumbnail/C32AAF39-A4EE-46A3-9B96-7C958799611EL0001_1569477843.jpg" duration="11000"/>
+	</message>
+    ```  
+  - 파일   
+    ```xml      
+	<message type="groupchat" to="545d2831-d85a-4b0ba1cf-acf2ee803e76@lubigmuc.xmpp.lubig.co.kr" msgtype="file" 
+		 id="5176837B-CA79-47C9-A028-5AD8E3A21BE4" nick="아이폰10" filetype="file" jid="daeba3a140e54f7ca5990bb953276cb6@xmpp.lubig.co.kr" 
+		 roomid="0A9E62BD-19CB-45D6-9133-3703504237AB" date="2019-09-26T06:04:48.801Z">
+		<body>file</body>
+		<filesize="5654182" name="doc_1541073348685.zip" 
+			  url="https://duf7tkmfho2jb.cloudfront.net/chat/b71bc87bc51ff3008e56b0362f0e19ef/cfa5301358b9fcbe7aa45b1ceea088c6/files/doc_1541073348685.zip"/>
+	</message>
+    ```  
+  - 연락처   
+    ```xml      
+	<message type="groupchat" to="545d2831-d85a-4b0ba1cf-acf2ee803e76@lubigmuc.xmpp.lubig.co.kr" msgtype="file" 
+		 id="23CE62FF-4462-4CCABEEE-5412550CAEA7" nick="아이폰10" filetype="contact" 
+		 jid="daeba3a140e54f7ca5990bb953276cb6@xmpp.lubig.co.kr" roomid="0A9E62BD-19CB-45D6-9133-3703504237AB" 
+		 date="2019-09-26T06:05:37.605Z">
+		<body>contact</body>
+		<contact name="김나훈 과장님" memo="">
+			<number>
+				<item type="2"number="01022227229" label=""/>
+			</number>
+			<email/></contact>
+	</message>
+    ```  
+  - 회수   
+    ```xml      
+	<message type="groupchat" to="545d2831-d85a-4b0ba1cf-acf2ee803e76@lubigmuc.xmpp.lubig.co.kr" id="BB80D2F8-55BD-4583-9CCC-01270ACE5B9F" 
+		 nick="아이폰10" msgtype="none" filetype="none" jid="daeba3a140e54f7ca5990bb953276cb6@xmpp.lubig.co.kr" 
+		 roomid="0A9E62BD-19CB-45D6-9133-3703504237AB" date="2019-09-26T06:46:32.340Z">
+		<body>del</body>
+		<del msgid="23CE62FF-4462-4CCA-BEEE-5412550CAEA7" msgtime="2019-09-26T06:05:37.605Z"/>
 	</message>
     ```  
   - 지도   
