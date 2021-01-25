@@ -484,6 +484,9 @@
 		return false;
     }
     ```
+  - ERD
+    DB...
+    <img style="width: 300px; height: 500px" src="https://github.com/foryouself83/testrepo/blob/main/src/Images/Login_seq.png?raw=true"/>
     
 ## 자동 업데이트      
   - 설명   
