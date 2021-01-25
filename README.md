@@ -527,6 +527,9 @@ Lubig sever api를 이용하여 로그인, 친구목록, 대화방 기존 대화
 ## DB 최적화
   - 대화방, 메시지 관련 데이터 중복 사항이 많아 정규화가 필요합니다.   
   - 메시지의 경우 Stanza를 모두 저장하는 column을 추가하여 신규 메시지에 대한 확장성을 제공해야 합니다.
+  
+## 리뉴얼 디자인
+  - zeplin에 등록된 리뉴얼된 디자인이 적용되어야 합니다.  
     
 # 최근 개발 항목
 2021년 1월 13일기준으로 가장 최근에 개발한 항목으로 작성되었습니다.
@@ -590,16 +593,3 @@ Lubig sever api를 이용하여 로그인, 친구목록, 대화방 기존 대화
   * 로그인  
     <img style="width: 300px; height: 500px" src="https://github.com/foryouself83/testrepo/blob/main/src/Images/Login_seq.png?raw=true"/>
   
-## Code
-> this code is sample resource
-```csharp
-public class LoopTest
-{
-    public void LoopEnumerable(EnumType type, long loopCnt)    
-    {    
-       console.WriteLine(string.Format("Total Time: {0} sec", new LoopAction(type, loopCnt).Run());
-    }
-}
-```
-code: [here](https://github.com)
-
