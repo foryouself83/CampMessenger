@@ -590,6 +590,6 @@ Lubig sever api를 이용하여 로그인, 친구목록, 대화방 기존 대화
     |x64 upload|업데이트 프로그램|    
 
 ## 시퀀스 다이어그램
-### 로그인  
-    <img style="width: 300px; height: 500px" src="https://github.com/foryouself83/testrepo/blob/main/src/Images/Login_seq.png?raw=true"/>
+### 로그인     
+  <img style="width: 300px; height: 500px" src="https://github.com/foryouself83/testrepo/blob/main/src/Images/Login_seq.png?raw=true"/>
   
