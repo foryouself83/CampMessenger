@@ -836,36 +836,45 @@ Lubig sever api를 이용하여 로그인, 친구목록, 대화방 기존 대화
 # 주요 화면
 ## 로그인
   > ID, Password 입력하여 로그인 및 자동업데이트됩니다.
-  <img width="20%" height="20%" src="https://github.com/foryouself83/testrepo/blob/main/src/Images/LoginWnd.png?raw=true"/>
+  <img width="20%" height="20%" src="https://github.com/foryouself83/testrepo/blob/main/src/Images/LoginWnd.png?raw=true"/>   
+  
 ## 친구 목록
   > 간략한 자신 및 친구 프로필이 노출되며, 가입된 캠프 목록이 최대 10개까지 노출됩니다.    
   > 친구 닉네임으로 검색할 수 있습니다.   
   <img width="20%" height="20%" src="https://github.com/foryouself83/testrepo/blob/main/src/Images/friendsTab.png?raw=true"/>
+  
 ## 친구 프로필
   > 친구와 1:1 대화 또는 친구 닉네임을 변경할 수 있습니다.   
   <img width="20%" height="20%" src="https://github.com/foryouself83/testrepo/blob/main/src/Images/ProfileWnd.png?raw=true"/>
+  
 ## 채팅방 목록
   > 채팅 가능한 채팅방 목록이 모두 노출되며 시간별, 안읽은 메시지 순으로 정할 수 있습니다.    
   > 채팅방 이름 변경, 나가기, 알림 설정, 상단 고정, 검색할 수 있습니다.   
   <img width="20%" height="20%" src="https://github.com/foryouself83/testrepo/blob/main/src/Images/talkListTab.png?raw=true"/>
+  
 ## 소식
   > 친구의 프로필 변경 또는 게시글 작성 소식을 확인 할 수 있습니다.   
   > 친구 이름, 해시태그, 게시글로 검색이 가능합니다.   
   <img width="20%" height="20%" src="https://github.com/foryouself83/testrepo/blob/main/src/Images/FeedTab.png?raw=true"/>
+  
 ## 가입 캠프 목록
   > 내가 가입한 모든 캠프 목록이 노출되며 검색할 수 있습니다.
   <img width="20%" height="20%" src="https://github.com/foryouself83/testrepo/blob/main/src/Images/CampListWnd.png?raw=true"/>
+  
 ## 캠프 홈
   > 캠프 게시글이 최신 순으로 노출되며 `이미지`, `동영상`, `파일`, `해시태그`, `Url`등을 사용할 수 있습니다.
   > `좋아요`, `댓글` 또는 `대댓글`을 작성할 수 있습니다.
   <img width="20%" height="20%" src="https://github.com/foryouself83/testrepo/blob/main/src/Images/CampHome.png?raw=true"/>
+  
 ## 캠프 그룹방 목록
   > 캠프별로 있는 그룹방으로 공개, 비공개 방으로 분류되며 공개방의 경우 참여하지 않아도 노출됩니다.
   <img width="20%" height="20%" src="https://github.com/foryouself83/testrepo/blob/main/src/Images/CampGroupTalkList.png?raw=true"/>
+  
 ## 캠프 대화(일반 대화)
   > `텍스트`, `이미지`, `동영상`, `이모티콘`, `연락처`, `지도`, `선물` 등 여러 메시지를 전송할 수 있습니다.   
   > 대화방의 친구 초대, 나가기, 알람 설정할 수 있습니다.
   <img width="20%" height="20%" src="https://github.com/foryouself83/testrepo/blob/main/src/Images/CampTalk.png?raw=true"/>
+  
 ## 캠프 프로필
   > 캠프 친구의 소식을 구독할 수 있습니다.
   <img width="20%" height="20%" src="https://github.com/foryouself83/testrepo/blob/main/src/Images/CampProfileWNd.png?raw=true"/>
