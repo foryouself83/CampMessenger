@@ -303,6 +303,54 @@ public class DateTimeToDisplayTextConverter : IValueConverter
 ### 팁 
 > API를 통해 전달된 최종 데이터를 ViewModel 또는 Model 단계에서 변환하는 것은 WPF의 UI Load 체계와 순서를 고려해봤을때 좋은 방법이 아닙니다. 원본 데이터를 보존하면서 Converter를 수십 수백개 확장하는 것은 올바른 방법입니다.   
 
+## 브런치 전략
+### 브런치 정의
+  - **Master**
+    개발용 원격 브런치로 로컬 브런치에서 작업한 기능을 테스트하는 목적으로 사용한다.
+  - **Pre-Production**
+    Master 브런치에서 테스트가 완료된 항목을 Commit하며, 배포 전 테스트하는 목적으로 사용한다.
+  - **Production**
+    Pre-Production 브런치에서 테스트가 완료된 항목을 Commit하며, 최종 또는 긴급 등 배포되는 최종 소스를 관리하는 목적으로 사용한다.
+    
+### 기능 개발
+  1. `Pre-Production`에서 로컬 브런치 생성
+  1. 기능 개발 후 `Master` 브런치에 Commit 후 테스트
+  1. 테스트 완료 후 `Pre-Production` 브런치에 Commit
+  
+### 배포
+  1. `Prouction` 브런치에 버전정보 `Tag` 추가 후 배포   
+  
+### 배포 버전 버그 픽스
+  1. `Production`에서 로컬 브런치 생성
+  2. 버그 픽스 후 `Master` 브런치에 `Commit` 후 테스트
+  3. 테스트 완료 후 `Pre-Production`, `Production` 브런치에 `Commit`
+  4. `Production` 브런치에 버전정보 `Tag` 추가 후 배포
+    
+## 배포
+### 서명 방법
+  1. AssemblyInfo.cs 에 AssemblyVersion, AssemblyFileVersion 갱신   
+  1. \192.168.201.60, PW: 1(공유 PC 접근)   
+  1. C:\work\signtool\AppExeSignCode.bat을 이용하여 서명   
+  1. 인스톨쉴드를 이용하여 설치 파일 생성   
+  1. AppSetupSignCode.bat을 이용하여 설치파일 서명   
+  
+### 배포 방법  
+  1. <https://admin.lubig.co.kr/login>, <https://adminstage.lubig.co.kr/login> 접속
+  1. 계정 정보 입력(CampAdmin / campadmin2019!)
+  1. 설정 > PC 버전관리 > 신규 버전 등록 선택
+  - 버전 관리 항목  
+    |항목|내용|
+    |:---:|:---:|  
+    |버전|프로그램 버전|
+    |강업 여부|강제 업데이트 여부|
+    |설명|업데이트 내역|
+    |x86 exe|설치파일|
+    |x86 zip|자동 업데이트 파일|
+    |x64|설치 파일|
+    |x64|자동 업데이트 파일|
+    |x86 upload|업데이트 프로그램|
+    |x64 upload|업데이트 프로그램|    
+
 
 # 주요 기능   
 ## 채팅   
@@ -312,13 +360,10 @@ public class DateTimeToDisplayTextConverter : IValueConverter
     |Protocol|[XMPP](<https://xmpp.org/>)|
     |Library|[Sharp.Xmpp](<https://github.com/pgstath/Sharp.Xmpp>)|
   - 설명   
-    ```
-    Sharp.Xmpp 라이브러리의 함수 및 이벤트를 기본으로 커스텀된 메시지를 수/발신한다.   
-    채팅방 초대, 메시지 수/발신, 채팅방 정보, 채팅방 참여자 정보 등 채팅의 전반적인 부분을 담당한다.
+    `Sharp.Xmpp` 라이브러리의 함수 및 이벤트를 기본으로 커스텀된 메시지를 수/발신합니다.   
+    채팅방 초대, 메시지 수/발신, 채팅방 정보, 채팅방 참여자 정보 등 채팅의 전반적인 부분을 담당합니다.
     채팅 관련 이벤트, 오류 처리등이 구현되어 있습니다.
-    Git Opensource code에서 현 프로젝트에 맞춰서 일부 수정되어 있사오니 참고하시기 바랍니다.
-    Message 수신시에는 Queue에 추가되어 처리되므로, 하나씩 처리됩니다.
-    ```
+    Message 수신시에는 `Queue`에 추가되어 처리되므로, 하나씩 처리됩니다.
   - 참조 코드   
     ```csharp   
     var xmpp = XMPPManager.Instanse();
@@ -708,7 +753,6 @@ public class DateTimeToDisplayTextConverter : IValueConverter
 		</present>
 	</message>
     ```
- 
 ## API   
 Lubig sever api를 이용하여 로그인, 친구목록, 대화방 기존 대화글 불러오기등 여러 기능을 수행한다.
   - Address
@@ -821,53 +865,6 @@ Lubig sever api를 이용하여 로그인, 친구목록, 대화방 기존 대화
 |대화방 공지사항 게시판|이재웅|-|Master branch에 Commit|
 
 # 참고사항
-## 브런치 전략
-### 브런치 정의
-  - Master
-    개발용 원격 브런치로 로컬 브런치에서 작업한 기능을 테스트하는 목적으로 사용한다.
-  - Pre-Production
-    Master 브런치에서 테스트가 완료된 항목을 Commit하며, 배포 전 테스트하는 목적으로 사용한다.
-  - Production
-    Pre-Production 브런치에서 테스트가 완료된 항목을 Commit하며, 최종 또는 긴급 등 배포되는 최종 소스를 관리하는 목적으로 사용한다.
-    
-### 기능 개발
-  1. Pre-Production에서 로컬 브런치 생성
-  1. 기능 개발 후 Master 브런치에 Commit 후 테스트
-  1. 테스트 완료 후 Pre-Production 브런치에 Commit
-  
-### 배포
-  1. Prouction 브런치에 버전정보 Tag 추가 후 배포   
-  
-### 배포 버전 버그 픽스
-  1. Production에서 로컬 브런치 생성
-  2. 버그 픽스 후 Master 브런치에 Commit 후 테스트
-  3. 테스트 완료 후 Pre-Production, Production 브런치에 Commit
-  4. Production 브런치에 버전정보 Tag 추가 후 배포
-    
-## 배포
-### 서명 방법
-  1. AssemblyInfo.cs 에 AssemblyVersion, AssemblyFileVersion 갱신   
-  1. \192.168.201.60, PW: 1(공유 PC 접근)   
-  1. C:\work\signtool\AppExeSignCode.bat을 이용하여 서명   
-  1. 인스톨쉴드를 이용하여 설치 파일 생성   
-  1. AppSetupSignCode.bat을 이용하여 설치파일 서명   
-  
-### 배포 방법  
-  1. <https://admin.lubig.co.kr/login>, <https://adminstage.lubig.co.kr/login> 접속
-  1. 계정 정보 입력(CampAdmin / campadmin2019!)
-  1. 설정 > PC 버전관리 > 신규 버전 등록 선택
-  - 버전 관리 항목  
-    |항목|내용|
-    |:---:|:---:|  
-    |버전|프로그램 버전|
-    |강업 여부|강제 업데이트 여부|
-    |설명|업데이트 내역|
-    |x86 exe|설치파일|
-    |x86 zip|자동 업데이트 파일|
-    |x64|설치 파일|
-    |x64|자동 업데이트 파일|
-    |x86 upload|업데이트 프로그램|
-    |x64 upload|업데이트 프로그램|    
 
 ## 시퀀스 다이어그램
 ### 로그인     
