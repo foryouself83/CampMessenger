@@ -4,7 +4,7 @@
 
 # 목차
 > * [개발 환경](<https://github.com/foryouself83/testrepo/blob/main/README.md#%EA%B0%9C%EB%B0%9C-%ED%99%98%EA%B2%BD>)   
-> * [Base Struct](<https://github.com/foryouself83/CampMessger/blob/main/README.md#base-struct>)
+> * [기본 구조](<https://github.com/foryouself83/CampMessger/blob/main/README.md#base-struct>)
 > * [주요 기능](<https://github.com/foryouself83/testrepo/blob/main/README.md#%EC%A3%BC%EC%9A%94-%EA%B8%B0%EB%8A%A5>)   
 > * [미비 사항](<https://github.com/foryouself83/testrepo/blob/main/README.md#%EB%AF%B8%EB%B9%84-%EC%82%AC%ED%95%AD>)    
 > * [최근 개발 항목](<https://github.com/foryouself83/testrepo/blob/main/README.md#%EC%B5%9C%EA%B7%BC-%EA%B0%9C%EB%B0%9C-%ED%95%AD%EB%AA%A9>)    
@@ -20,7 +20,7 @@
 |Repository|<http://192.168.201.158/git/AppCampMessenger_PC.git>|
 |Design|zeplin platform  <br>ID:yjchoi@enliple.com  <br>PW: camp12345|   
 
-# Base Struct
+# 기본 구조
 향후 캠프 개발의 유지/추가 개발에 앞서 Based Struct 항목의 Resource, DataContext 항목들의 규칙과 방향성을 반드시 인지하고 주의사항을 확인하는 것을 권장합니다.
 ## ResourceDictionary
 ResourceDictionary는 이 앱에 사용되고 있는 모든 리스소 관리에 대한 정책, 개발 확장 방법에 대한 구조를 설명합니다.   
