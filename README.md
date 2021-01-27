@@ -5,6 +5,7 @@
 # 목차
 > * [개발 환경](<https://github.com/foryouself83/testrepo/blob/main/README.md#%EA%B0%9C%EB%B0%9C-%ED%99%98%EA%B2%BD>)   
 > * [주요 기능](<https://github.com/foryouself83/testrepo/blob/main/README.md#%EC%A3%BC%EC%9A%94-%EA%B8%B0%EB%8A%A5>)   
+> * [Base Struct](<https://github.com/foryouself83/CampMessger/blob/main/README.md#base-struct>)
 > * [미비 사항](<https://github.com/foryouself83/testrepo/blob/main/README.md#%EB%AF%B8%EB%B9%84-%EC%82%AC%ED%95%AD>)    
 > * [최근 개발 항목](<https://github.com/foryouself83/testrepo/blob/main/README.md#%EC%B5%9C%EA%B7%BC-%EA%B0%9C%EB%B0%9C-%ED%95%AD%EB%AA%A9>)    
 > * [참고 사항](<https://github.com/foryouself83/testrepo/blob/main/README.md#%EC%B0%B8%EA%B3%A0%EC%82%AC%ED%95%AD>)   
@@ -101,8 +102,6 @@ ResourceDictionary는 이 앱에 사용되고 있는 모든 리스소 관리에 
 [SvgToXaml](https://github.com/BerndK/SvgToXaml) - 대중적으로 가장 많이 쓰이고 있는 오픈소스 변환 프로그램입니다.   
 
 > Geometry는 일러스트레이터를 통해 작업된 최종 결과물을 `.png`가 아닌 `.svg` 형태로 넘겨받아 변환작업 할 수 있도록 합니다.   
-
-
 
 ### Geometry Resource 위치
 ```
