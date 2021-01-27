@@ -8,7 +8,7 @@
 > * [미비 사항](<https://github.com/foryouself83/testrepo/blob/main/README.md#%EB%AF%B8%EB%B9%84-%EC%82%AC%ED%95%AD>)    
 > * [최근 개발 항목](<https://github.com/foryouself83/testrepo/blob/main/README.md#%EC%B5%9C%EA%B7%BC-%EA%B0%9C%EB%B0%9C-%ED%95%AD%EB%AA%A9>)    
 > * [참고 사항](<https://github.com/foryouself83/testrepo/blob/main/README.md#%EC%B0%B8%EA%B3%A0%EC%82%AC%ED%95%AD>)   
-> * [이재웅 인수인계서](<https://github.com/foryouself83/testrepo/blob/main/README.md#%EC%B0%B8%EA%B3%A0%EC%82%AC%ED%95%AD>)
+> * [이재웅 인수인계서](<https://github.com/foryouself83/CampMessger/blob/main/README.md#%EC%9D%B4%EC%9E%AC%EC%9B%85-%EC%9D%B8%EC%88%98%EC%9D%B8%EA%B3%84%EC%84%9C>)
 
 # 개발 환경   
 |항목|내용|
