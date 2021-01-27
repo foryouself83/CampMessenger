@@ -19,7 +19,7 @@
 |DB|System.Data.Sqlite|
 |IDE|VisualStudio 2019 Pro|
 |Repository|<http://192.168.201.158/git/AppCampMessenger_PC.git>|
-|Design|zeplin platform  <br>ID:yjchoi@enliple.com  <br>PW: camp12345|   
+|Design|zeplin platform|   
 
 # 기본 구조
 향후 캠프 개발의 유지/추가 개발에 앞서 Based Struct 항목의 Resource, DataContext 항목들의 규칙과 방향성을 반드시 인지하고 주의사항을 확인하는 것을 권장합니다.
