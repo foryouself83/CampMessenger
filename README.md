@@ -4,8 +4,8 @@
 
 # 목차
 > * [개발 환경](<https://github.com/foryouself83/testrepo/blob/main/README.md#%EA%B0%9C%EB%B0%9C-%ED%99%98%EA%B2%BD>)   
-> * [주요 기능](<https://github.com/foryouself83/testrepo/blob/main/README.md#%EC%A3%BC%EC%9A%94-%EA%B8%B0%EB%8A%A5>)   
 > * [Base Struct](<https://github.com/foryouself83/CampMessger/blob/main/README.md#base-struct>)
+> * [주요 기능](<https://github.com/foryouself83/testrepo/blob/main/README.md#%EC%A3%BC%EC%9A%94-%EA%B8%B0%EB%8A%A5>)   
 > * [미비 사항](<https://github.com/foryouself83/testrepo/blob/main/README.md#%EB%AF%B8%EB%B9%84-%EC%82%AC%ED%95%AD>)    
 > * [최근 개발 항목](<https://github.com/foryouself83/testrepo/blob/main/README.md#%EC%B5%9C%EA%B7%BC-%EA%B0%9C%EB%B0%9C-%ED%95%AD%EB%AA%A9>)    
 > * [참고 사항](<https://github.com/foryouself83/testrepo/blob/main/README.md#%EC%B0%B8%EA%B3%A0%EC%82%AC%ED%95%AD>)   
