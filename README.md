@@ -911,6 +911,9 @@ Lubig sever api를 이용하여 로그인, 친구목록, 대화방 기존 대화
 ## 시퀀스 다이어그램
 ### 로그인     
   <img style="width: 300px; height: 500px" src="https://github.com/foryouself83/testrepo/blob/main/src/Images/Login_seq.png?raw=true"/>
+  
+## 모바일 어플리케이션 링크
+  [here](<https://play.google.com/store/apps/details?id=com.enliple.lubig>)
 
 # 이재웅 인수인계서   
 ## Notice (공지)
