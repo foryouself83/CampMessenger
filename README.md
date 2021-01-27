@@ -866,7 +866,7 @@ Lubig sever api를 이용하여 로그인, 친구목록, 대화방 기존 대화
 |대화방 공지사항 게시판|이재웅|-|Master branch에 Commit|
 
 # User Interface
-  <img width="30%" height="30%" src="https://github.com/foryouself83/testrepo/blob/main/src/Images/LoginWnd.png?raw=true"/>
+  <img width="10%" height="10%" src="https://github.com/foryouself83/testrepo/blob/main/src/Images/LoginWnd.png?raw=true"/>
   <img width="30%" height="30%" src="https://github.com/foryouself83/testrepo/blob/main/src/Images/friendsTab.png?raw=true"/>
   <img width="30%" height="30%" src="https://github.com/foryouself83/testrepo/blob/main/src/Images/talkListTab.png?raw=true"/>
   <img width="30%" height="30%" src="https://github.com/foryouself83/testrepo/blob/main/src/Images/FeedTab.png?raw=true"/>
