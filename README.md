@@ -430,11 +430,10 @@ Lubig sever api를 이용하여 로그인, 친구목록, 대화방 기존 대화
     |Lubig|<https://api.lubig.co.kr>|
     |Store|<https://storeapi.lubig.co.kr>|
     |Admin|<https://admin.lubig.co.kr>|    
-  - 설명    
-    ```
-    HttpWebRequest를 이용하여 Json형식으로 데이터를 수/발신한다.
+  - 설명        
+    'HttpWebRequest' 를 이용하여 'Json' 형식으로 데이터를 수/발신한다.
     각 서버에서 지원하는 API를 이용하여 해당 기능을 수행한다.       
-    ```
+    
   - 참조 코드   
     ```csharp   
     var login = LoginManager.Instanse();
