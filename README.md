@@ -6,7 +6,7 @@
 > * [개발 환경](<https://github.com/foryouself83/testrepo/blob/main/README.md#%EA%B0%9C%EB%B0%9C-%ED%99%98%EA%B2%BD>)   
 > * [기본 구조](<https://github.com/foryouself83/CampMessenger/blob/main/README.md#%EA%B8%B0%EB%B3%B8-%EA%B5%AC%EC%A1%B0>)
 > * [주요 기능](<https://github.com/foryouself83/testrepo/blob/main/README.md#%EC%A3%BC%EC%9A%94-%EA%B8%B0%EB%8A%A5>)   
-> * [주요 화면](<https://github.com/foryouself83/CampMessenger/blob/main/README.md#user-interface>)
+> * [주요 화면](<https://github.com/foryouself83/CampMessenger/blob/main/README.md#%EC%A3%BC%EC%9A%94-%ED%99%94%EB%A9%B4>)
 > * [미비 사항](<https://github.com/foryouself83/testrepo/blob/main/README.md#%EB%AF%B8%EB%B9%84-%EC%82%AC%ED%95%AD>)    
 > * [최근 개발 항목](<https://github.com/foryouself83/testrepo/blob/main/README.md#%EC%B5%9C%EA%B7%BC-%EA%B0%9C%EB%B0%9C-%ED%95%AD%EB%AA%A9>)    
 > * [참고 사항](<https://github.com/foryouself83/testrepo/blob/main/README.md#%EC%B0%B8%EA%B3%A0%EC%82%AC%ED%95%AD>)   
@@ -834,16 +834,41 @@ Lubig sever api를 이용하여 로그인, 친구목록, 대화방 기존 대화
     }
     ```
 # 주요 화면
+## 로그인
+  > ID, Password 입력하여 로그인 및 자동업데이트됩니다.
   <img width="20%" height="20%" src="https://github.com/foryouself83/testrepo/blob/main/src/Images/LoginWnd.png?raw=true"/>
+## 친구 목록
+  > 간략한 자신 및 친구 프로필이 노출되며, 가입된 캠프 목록이 최대 10개까지 노출됩니다.    
+  > 친구 닉네임으로 검색할 수 있습니다.   
   <img width="20%" height="20%" src="https://github.com/foryouself83/testrepo/blob/main/src/Images/friendsTab.png?raw=true"/>
-  <img width="20%" height="20%" src="https://github.com/foryouself83/testrepo/blob/main/src/Images/talkListTab.png?raw=true"/>
-  <img width="20%" height="20%" src="https://github.com/foryouself83/testrepo/blob/main/src/Images/FeedTab.png?raw=true"/>
-  <img width="20%" height="20%" src="https://github.com/foryouself83/testrepo/blob/main/src/Images/CampListWnd.png?raw=true"/>
-  <img width="20%" height="20%" src="https://github.com/foryouself83/testrepo/blob/main/src/Images/CampHome.png?raw=true"/>
-  <img width="20%" height="20%" src="https://github.com/foryouself83/testrepo/blob/main/src/Images/CampGroupTalkList.png?raw=true"/>
-  <img width="20%" height="20%" src="https://github.com/foryouself83/testrepo/blob/main/src/Images/CampTalk.png?raw=true"/>
-  <img width="20%" height="20%" src="https://github.com/foryouself83/testrepo/blob/main/src/Images/CampProfileWNd.png?raw=true"/>
+## 친구 프로필
+  > 친구와 1:1 대화 또는 친구 닉네임을 변경할 수 있습니다.   
   <img width="20%" height="20%" src="https://github.com/foryouself83/testrepo/blob/main/src/Images/ProfileWnd.png?raw=true"/>
+## 채팅방 목록
+  > 채팅 가능한 채팅방 목록이 모두 노출되며 시간별, 안읽은 메시지 순으로 정할 수 있습니다.    
+  > 채팅방 이름 변경, 나가기, 알림 설정, 상단 고정, 검색할 수 있습니다.   
+  <img width="20%" height="20%" src="https://github.com/foryouself83/testrepo/blob/main/src/Images/talkListTab.png?raw=true"/>
+## 소식
+  > 친구의 프로필 변경 또는 게시글 작성 소식을 확인 할 수 있습니다.   
+  > 친구 이름, 해시태그, 게시글로 검색이 가능합니다.   
+  <img width="20%" height="20%" src="https://github.com/foryouself83/testrepo/blob/main/src/Images/FeedTab.png?raw=true"/>
+## 가입 캠프 목록
+  > 내가 가입한 모든 캠프 목록이 노출되며 검색할 수 있습니다.
+  <img width="20%" height="20%" src="https://github.com/foryouself83/testrepo/blob/main/src/Images/CampListWnd.png?raw=true"/>
+## 캠프 홈
+  > 캠프 게시글이 최신 순으로 노출되며 `이미지`, `동영상`, `파일`, `해시태그`, `Url`등을 사용할 수 있습니다.
+  > `좋아요`, `댓글` 또는 `대댓글`을 작성할 수 있습니다.
+  <img width="20%" height="20%" src="https://github.com/foryouself83/testrepo/blob/main/src/Images/CampHome.png?raw=true"/>
+## 캠프 그룹방 목록
+  > 캠프별로 있는 그룹방으로 공개, 비공개 방으로 분류되며 공개방의 경우 참여하지 않아도 노출됩니다.
+  <img width="20%" height="20%" src="https://github.com/foryouself83/testrepo/blob/main/src/Images/CampGroupTalkList.png?raw=true"/>
+## 캠프 대화(일반 대화)
+  > `텍스트`, `이미지`, `동영상`, `이모티콘`, `연락처`, `지도`, `선물` 등 여러 메시지를 전송할 수 있습니다.   
+  > 대화방의 친구 초대, 나가기, 알람 설정할 수 있습니다.
+  <img width="20%" height="20%" src="https://github.com/foryouself83/testrepo/blob/main/src/Images/CampTalk.png?raw=true"/>
+## 캠프 프로필
+  > 캠프 친구의 소식을 구독할 수 있습니다.
+  <img width="20%" height="20%" src="https://github.com/foryouself83/testrepo/blob/main/src/Images/CampProfileWNd.png?raw=true"/>
     
 # 미비 사항
 2020년 1월 13일 기준으로 작성되었습니다.
