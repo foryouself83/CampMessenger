@@ -876,6 +876,8 @@ Lubig sever api를 이용하여 로그인, 친구목록, 대화방 기존 대화
   <img style="width: 65px; height: 183px" src="https://github.com/foryouself83/testrepo/blob/main/src/Images/CampTalk.png?raw=true"/>
   <img style="width: 48px; height: 61px" src="https://github.com/foryouself83/testrepo/blob/main/src/Images/CampProfileWNd.png?raw=true"/>
   <img style="width: 48px; height: 51px" src="https://github.com/foryouself83/testrepo/blob/main/src/Images/ProfileWnd.png?raw=true"/>
+
+# 참고 사항
 ## 시퀀스 다이어그램
 ### 로그인     
   <img style="width: 300px; height: 500px" src="https://github.com/foryouself83/testrepo/blob/main/src/Images/Login_seq.png?raw=true"/>
