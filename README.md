@@ -6,9 +6,9 @@
 > * [개발 환경](<https://github.com/foryouself83/testrepo/blob/main/README.md#%EA%B0%9C%EB%B0%9C-%ED%99%98%EA%B2%BD>)   
 > * [기본 구조](<https://github.com/foryouself83/CampMessenger/blob/main/README.md#%EA%B8%B0%EB%B3%B8-%EA%B5%AC%EC%A1%B0>)
 > * [주요 기능](<https://github.com/foryouself83/testrepo/blob/main/README.md#%EC%A3%BC%EC%9A%94-%EA%B8%B0%EB%8A%A5>)   
+> * [주요 화면](<https://github.com/foryouself83/CampMessenger/blob/main/README.md#user-interface>)
 > * [미비 사항](<https://github.com/foryouself83/testrepo/blob/main/README.md#%EB%AF%B8%EB%B9%84-%EC%82%AC%ED%95%AD>)    
 > * [최근 개발 항목](<https://github.com/foryouself83/testrepo/blob/main/README.md#%EC%B5%9C%EA%B7%BC-%EA%B0%9C%EB%B0%9C-%ED%95%AD%EB%AA%A9>)    
-> * [User Interface](<https://github.com/foryouself83/CampMessenger/blob/main/README.md#user-interface>)
 > * [참고 사항](<https://github.com/foryouself83/testrepo/blob/main/README.md#%EC%B0%B8%EA%B3%A0%EC%82%AC%ED%95%AD>)   
 > * [이재웅 인수인계서](<https://github.com/foryouself83/CampMessger/blob/main/README.md#%EC%9D%B4%EC%9E%AC%EC%9B%85-%EC%9D%B8%EC%88%98%EC%9D%B8%EA%B3%84%EC%84%9C>)
 
@@ -833,6 +833,17 @@ Lubig sever api를 이용하여 로그인, 친구목록, 대화방 기존 대화
 		return;
     }
     ```
+# 주요 화면
+  <img width="20%" height="20%" src="https://github.com/foryouself83/testrepo/blob/main/src/Images/LoginWnd.png?raw=true"/>
+  <img width="20%" height="20%" src="https://github.com/foryouself83/testrepo/blob/main/src/Images/friendsTab.png?raw=true"/>
+  <img width="20%" height="20%" src="https://github.com/foryouself83/testrepo/blob/main/src/Images/talkListTab.png?raw=true"/>
+  <img width="20%" height="20%" src="https://github.com/foryouself83/testrepo/blob/main/src/Images/FeedTab.png?raw=true"/>
+  <img width="20%" height="20%" src="https://github.com/foryouself83/testrepo/blob/main/src/Images/CampListWnd.png?raw=true"/>
+  <img width="20%" height="20%" src="https://github.com/foryouself83/testrepo/blob/main/src/Images/CampHome.png?raw=true"/>
+  <img width="20%" height="20%" src="https://github.com/foryouself83/testrepo/blob/main/src/Images/CampGroupTalkList.png?raw=true"/>
+  <img width="20%" height="20%" src="https://github.com/foryouself83/testrepo/blob/main/src/Images/CampTalk.png?raw=true"/>
+  <img width="20%" height="20%" src="https://github.com/foryouself83/testrepo/blob/main/src/Images/CampProfileWNd.png?raw=true"/>
+  <img width="20%" height="20%" src="https://github.com/foryouself83/testrepo/blob/main/src/Images/ProfileWnd.png?raw=true"/>
     
 # 미비 사항
 2020년 1월 13일 기준으로 작성되었습니다.
@@ -864,18 +875,6 @@ Lubig sever api를 이용하여 로그인, 친구목록, 대화방 기존 대화
 |캠프 1:1대화|유병석|2020.01.11|프로그램 버전:0.8.99|
 |프로그램 안정화|안동현|2020.01.11|프로그램 버전:0.8.99|
 |대화방 공지사항 게시판|이재웅|-|Master branch에 Commit|
-
-# User Interface
-  <img width="20%" height="20%" src="https://github.com/foryouself83/testrepo/blob/main/src/Images/LoginWnd.png?raw=true"/>
-  <img width="20%" height="20%" src="https://github.com/foryouself83/testrepo/blob/main/src/Images/friendsTab.png?raw=true"/>
-  <img width="20%" height="20%" src="https://github.com/foryouself83/testrepo/blob/main/src/Images/talkListTab.png?raw=true"/>
-  <img width="20%" height="20%" src="https://github.com/foryouself83/testrepo/blob/main/src/Images/FeedTab.png?raw=true"/>
-  <img width="20%" height="20%" src="https://github.com/foryouself83/testrepo/blob/main/src/Images/CampListWnd.png?raw=true"/>
-  <img width="20%" height="20%" src="https://github.com/foryouself83/testrepo/blob/main/src/Images/CampHome.png?raw=true"/>
-  <img width="20%" height="20%" src="https://github.com/foryouself83/testrepo/blob/main/src/Images/CampGroupTalkList.png?raw=true"/>
-  <img width="20%" height="20%" src="https://github.com/foryouself83/testrepo/blob/main/src/Images/CampTalk.png?raw=true"/>
-  <img width="20%" height="20%" src="https://github.com/foryouself83/testrepo/blob/main/src/Images/CampProfileWNd.png?raw=true"/>
-  <img width="20%" height="20%" src="https://github.com/foryouself83/testrepo/blob/main/src/Images/ProfileWnd.png?raw=true"/>
 
 # 참고 사항
 ## 시퀀스 다이어그램
