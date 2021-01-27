@@ -197,7 +197,7 @@ using AppCampMessenger.Based.Converters;
   - **DateTimeToDisplayTextConverter** *DateTime 타입을 3일전 형식의 포멧으로 반환*
   - **EmptyToCollapsedConverter** *값이 Empty일 때 Collapsed or Visible 반환*
   - **EmptyToVisibilityConverter** *값이 Empty일 때 Visible or Collapsed 반환*
-  - **ExistToVisibilityConverter** *값이 존재할 때 (!string.IsEmpty(vlaue)) Visibility or Collapsed 반환
+  - **ExistToVisibilityConverter** *값이 존재할 때 (!string.IsEmpty(vlaue)) Visibility or Collapsed 반환*
   - **FriendDescriptionWidthConverter** *값의 길이에 따라 Width를 반환* *비 범용성*
   - **TextBlockHyperLinkConverter** *값을 hyperlink로 반환*
   - **ZeroToCollapsedConverter** *값이 0일 때 Collapsed or Visible 반환*
