@@ -862,7 +862,7 @@ Lubig sever api를 이용하여 로그인, 친구목록, 대화방 기존 대화
   <img width="20%" height="20%" src="https://github.com/foryouself83/testrepo/blob/main/src/Images/CampListWnd.png?raw=true"/>
   
 ## 캠프 홈
-  > 캠프 게시글이 최신 순으로 노출되며 `이미지`, `동영상`, `파일`, `해시태그`, `Url`등을 사용할 수 있습니다.
+  > 캠프 게시글이 최신 순으로 노출되며 `이미지`, `동영상`, `파일`, `해시태그`, `Url`등을 사용할 수 있습니다.   
   > `좋아요`, `댓글` 또는 `대댓글`을 작성할 수 있습니다.
   <img width="20%" height="20%" src="https://github.com/foryouself83/testrepo/blob/main/src/Images/CampHome.png?raw=true"/>
   
