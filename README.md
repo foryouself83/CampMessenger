@@ -864,8 +864,17 @@ Lubig sever api를 이용하여 로그인, 친구목록, 대화방 기존 대화
 |프로그램 안정화|안동현|2020.01.11|프로그램 버전:0.8.99|
 |대화방 공지사항 게시판|이재웅|-|Master branch에 Commit|
 
-# 참고사항
-
+# User Interface
+  <img style="width: 130px; height: 265px" src="https://github.com/foryouself83/testrepo/blob/main/src/Images/LoginWnd.png?raw=true"/>
+  <img style="width: 130px; height: 265px" src="https://github.com/foryouself83/testrepo/blob/main/src/Images/friendsTab.png?raw=true"/>
+  <img style="width: 130px; height: 265px" src="https://github.com/foryouself83/testrepo/blob/main/src/Images/talkListTab.png?raw=true"/>
+  <img style="width: 130px; height: 265px" src="https://github.com/foryouself83/testrepo/blob/main/src/Images/FeedTab.png?raw=true"/>
+  <img style="width: 130px; height: 265px" src="https://github.com/foryouself83/testrepo/blob/main/src/Images/CampListWnd.png?raw=true"/>
+  <img style="width: 130px; height: 265px" src="https://github.com/foryouself83/testrepo/blob/main/src/Images/CampHome.png?raw=true"/>
+  <img style="width: 130px; height: 265px" src="https://github.com/foryouself83/testrepo/blob/main/src/Images/CampGroupTalkList.png?raw=true"/>
+  <img style="width: 130px; height: 265px" src="https://github.com/foryouself83/testrepo/blob/main/src/Images/CampTalk.png?raw=true"/>
+  <img style="width: 97px; height: 122px" src="https://github.com/foryouself83/testrepo/blob/main/src/Images/CampProfileWNd.png?raw=true"/>
+  <img style="width: 97px; height: 101px" src="https://github.com/foryouself83/testrepo/blob/main/src/Images/ProfileWnd.png?raw=true"/>
 ## 시퀀스 다이어그램
 ### 로그인     
   <img style="width: 300px; height: 500px" src="https://github.com/foryouself83/testrepo/blob/main/src/Images/Login_seq.png?raw=true"/>
