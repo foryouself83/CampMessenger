@@ -886,7 +886,7 @@ Lubig sever api를 이용하여 로그인, 친구목록, 대화방 기존 대화
   - 재현 불가등 사유로 보류 43건에 대한 수정이 안되어 있습니다.
   
 ## 속도 개선
-  - 대화방 목록 Template화
+  - 대화방 목록 Template 고도화
   - 중복된 Image 랜더링 제거(Image manager class 필요)
   - API 호출시 비동기 처리 추가    
   
