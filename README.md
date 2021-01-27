@@ -817,10 +817,7 @@ Lubig sever api를 이용하여 로그인, 친구목록, 대화방 기존 대화
 		return false;
     }
     ```
-  - ERD   
-    Entity Relationship Diagram으로 클릭하여 확대하거나 저장하면 자세히 볼 수 있습니다.
-    <img style="width: 680px; height: 500px" src="https://github.com/foryouself83/testrepo/blob/main/src/Images/PC_Camp_ERD.png?raw=true"/>
-    
+
 ## 자동 업데이트      
   - 설명   
     프로그램 버전정보를 비교하여 낮을 경우 Login시 프로그램을 업데이트한다.
