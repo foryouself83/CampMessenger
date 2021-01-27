@@ -8,6 +8,7 @@
 > * [주요 기능](<https://github.com/foryouself83/testrepo/blob/main/README.md#%EC%A3%BC%EC%9A%94-%EA%B8%B0%EB%8A%A5>)   
 > * [미비 사항](<https://github.com/foryouself83/testrepo/blob/main/README.md#%EB%AF%B8%EB%B9%84-%EC%82%AC%ED%95%AD>)    
 > * [최근 개발 항목](<https://github.com/foryouself83/testrepo/blob/main/README.md#%EC%B5%9C%EA%B7%BC-%EA%B0%9C%EB%B0%9C-%ED%95%AD%EB%AA%A9>)    
+> * [User Interface](<https://github.com/foryouself83/CampMessenger/blob/main/README.md#user-interface>)
 > * [참고 사항](<https://github.com/foryouself83/testrepo/blob/main/README.md#%EC%B0%B8%EA%B3%A0%EC%82%AC%ED%95%AD>)   
 > * [이재웅 인수인계서](<https://github.com/foryouself83/CampMessger/blob/main/README.md#%EC%9D%B4%EC%9E%AC%EC%9B%85-%EC%9D%B8%EC%88%98%EC%9D%B8%EA%B3%84%EC%84%9C>)
 
@@ -865,16 +866,16 @@ Lubig sever api를 이용하여 로그인, 친구목록, 대화방 기존 대화
 |대화방 공지사항 게시판|이재웅|-|Master branch에 Commit|
 
 # User Interface
-  <img style="width: 130px; height: 265px" src="https://github.com/foryouself83/testrepo/blob/main/src/Images/LoginWnd.png?raw=true"/>
-  <img style="width: 130px; height: 265px" src="https://github.com/foryouself83/testrepo/blob/main/src/Images/friendsTab.png?raw=true"/>
-  <img style="width: 130px; height: 265px" src="https://github.com/foryouself83/testrepo/blob/main/src/Images/talkListTab.png?raw=true"/>
-  <img style="width: 130px; height: 265px" src="https://github.com/foryouself83/testrepo/blob/main/src/Images/FeedTab.png?raw=true"/>
-  <img style="width: 130px; height: 265px" src="https://github.com/foryouself83/testrepo/blob/main/src/Images/CampListWnd.png?raw=true"/>
-  <img style="width: 130px; height: 265px" src="https://github.com/foryouself83/testrepo/blob/main/src/Images/CampHome.png?raw=true"/>
-  <img style="width: 130px; height: 265px" src="https://github.com/foryouself83/testrepo/blob/main/src/Images/CampGroupTalkList.png?raw=true"/>
-  <img style="width: 130px; height: 265px" src="https://github.com/foryouself83/testrepo/blob/main/src/Images/CampTalk.png?raw=true"/>
-  <img style="width: 97px; height: 122px" src="https://github.com/foryouself83/testrepo/blob/main/src/Images/CampProfileWNd.png?raw=true"/>
-  <img style="width: 97px; height: 101px" src="https://github.com/foryouself83/testrepo/blob/main/src/Images/ProfileWnd.png?raw=true"/>
+  <img style="width: 65px; height: 183px" src="https://github.com/foryouself83/testrepo/blob/main/src/Images/LoginWnd.png?raw=true"/>
+  <img style="width: 65px; height: 183px" src="https://github.com/foryouself83/testrepo/blob/main/src/Images/friendsTab.png?raw=true"/>
+  <img style="width: 65px; height: 183px" src="https://github.com/foryouself83/testrepo/blob/main/src/Images/talkListTab.png?raw=true"/>
+  <img style="width: 65px; height: 183px" src="https://github.com/foryouself83/testrepo/blob/main/src/Images/FeedTab.png?raw=true"/>
+  <img style="width: 65px; height: 183px" src="https://github.com/foryouself83/testrepo/blob/main/src/Images/CampListWnd.png?raw=true"/>
+  <img style="width: 65px; height: 183px" src="https://github.com/foryouself83/testrepo/blob/main/src/Images/CampHome.png?raw=true"/>
+  <img style="width: 65px; height: 183px" src="https://github.com/foryouself83/testrepo/blob/main/src/Images/CampGroupTalkList.png?raw=true"/>
+  <img style="width: 65px; height: 183px" src="https://github.com/foryouself83/testrepo/blob/main/src/Images/CampTalk.png?raw=true"/>
+  <img style="width: 48px; height: 61px" src="https://github.com/foryouself83/testrepo/blob/main/src/Images/CampProfileWNd.png?raw=true"/>
+  <img style="width: 48px; height: 51px" src="https://github.com/foryouself83/testrepo/blob/main/src/Images/ProfileWnd.png?raw=true"/>
 ## 시퀀스 다이어그램
 ### 로그인     
   <img style="width: 300px; height: 500px" src="https://github.com/foryouself83/testrepo/blob/main/src/Images/Login_seq.png?raw=true"/>
