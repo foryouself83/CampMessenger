@@ -24,7 +24,7 @@
     |항목|내용|
     |:---:|:---:|  
     |Protocol|XMPP|
-    |Library|Sharp.Xmpp|
+    |Library|[Sharp.Xmpp](<https://github.com/pgstath/Sharp.Xmpp>)|
   - 설명   
     ```
     Sharp.Xmpp 라이브러리의 함수 및 이벤트를 기본으로 커스텀된 메시지를 수/발신한다.   
