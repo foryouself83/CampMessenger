@@ -23,7 +23,7 @@
   - 주요 항목    
     |항목|내용|
     |:---:|:---:|  
-    |Protocol|XMPP|
+    |Protocol|[XMPP](<https://xmpp.org/>)|
     |Library|[Sharp.Xmpp](<https://github.com/pgstath/Sharp.Xmpp>)|
   - 설명   
     ```
