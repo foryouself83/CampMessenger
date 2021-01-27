@@ -19,47 +19,11 @@
 |Repository|<http://192.168.201.158/git/AppCampMessenger_PC.git>|
 |Design|zeplin platform  <br>ID:yjchoi@enliple.com  <br>PW: camp12345|   
 
-# 주요 기능   
-## 채팅   
-  - 주요 항목    
-    |항목|내용|
-    |:---:|:---:|  
-    |Protocol|[XMPP](<https://xmpp.org/>)|
-    |Library|[Sharp.Xmpp](<https://github.com/pgstath/Sharp.Xmpp>)|
-  - 설명   
-    ```
-    Sharp.Xmpp 라이브러리의 함수 및 이벤트를 기본으로 커스텀된 메시지를 수/발신한다.   
-    채팅방 초대, 메시지 수/발신, 채팅방 정보, 채팅방 참여자 정보 등 채팅의 전반적인 부분을 담당한다.
-    채팅 관련 이벤트, 오류 처리등이 구현되어 있습니다.
-    Git Opensource code에서 현 프로젝트에 맞춰서 일부 수정되어 있사오니 참고하시기 바랍니다.
-    Message 수신시에는 Queue에 추가되어 처리되므로, 하나씩 처리됩니다.
-    ```
-  - 참조 코드   
-    ```csharp   
-    var xmpp = XMPPManager.Instanse();
-    
-	if (!xmpp.XmppConnect())
-	{
-		for (int i = 0; i < 2; i++)
-		{
-			if (!xmpp.XmppRetryConnect())
-			{
-				Messenger.Default.Send(new NotificationMessage("Logout"));
-				System.Windows.Application.Current.Dispatcher.Invoke(() =>
-				{
-					log.WriteLog(LogType.Error, System.Reflection.MethodBase.GetCurrentMethod(), "XmppConnect failed.");
-					sys.OpenMessageBox("채팅 서버 연결에 실패하였습니다.", "", MessageBoxButton.OK);
-				});
-				return;
-			}
-		}
-	}
-    ```
-## Base Struct
+# Base Struct
 향후 캠프 개발의 유지/추가 개발에 앞서 Based Struct 항목의 Resource, DataContext 항목들의 규칙과 방향성을 반드시 인지하고 주의사항을 확인하는 것을 권장합니다.
-### 1. ResourceDictionary
+## ResourceDictionary
 ResourceDictionary는 이 앱에 사용되고 있는 모든 리스소 관리에 대한 정책, 개발 확장 방법에 대한 구조를 설명합니다.   
-#### 리소스 관리대상 주요 위치   
+### 리소스 관리대상 주요 위치   
 
 > *AppCampMessenger/App.xaml*   
 > *AppCampMessenger/Based/Template/*
@@ -123,7 +87,7 @@ ResourceDictionary는 이 앱에 사용되고 있는 모든 리스소 관리에 
   StartupUri="MainWindow.xaml"
   ```
   *(MainWindow.xaml: 로그인과 메인화면을 `MainWindow`에서 함께 Switching 처리되고 있습니다.)*
-### 2. Geometry   
+## Geometry   
 
 **Zeplin** 디자인 팀간 협업   
 
@@ -140,13 +104,13 @@ ResourceDictionary는 이 앱에 사용되고 있는 모든 리스소 관리에 
 
 
 
-#### Geometry Resource 위치
+### Geometry Resource 위치
 ```
 AppCampMessenger/Based/Template/PathStyles.xaml
 ```
 - #### DrawingImage
   1개 이상의 복합 Geomatry 리소스 `DrawingImage` 형식
-  ###### PathStyles.xaml   
+  ##### PathStyles.xaml   
   
   ```xaml
   <DrawingImage x:Key="DRAWING_NOTICE">
@@ -204,18 +168,17 @@ AppCampMessenger/Based/Template/PathStyles.xaml
   ```
   Geometry를 다이렉트로 적용하는 경우 Data 속성에 직접 StaticResource 바인딩을 합니다.   
   
-  **끝으로**   
-  
-  > 상황에 따라 Geometry를 적용하는 3가지 방식을 기반으로 리소스를 타이트하게 관리해 나가는 것은 디자인의 일관성과 관리성 측면에서 매우 중요한 요소입니다.
+### 팁  
+> 상황에 따라 Geometry를 적용하는 3가지 방식을 기반으로 리소스를 타이트하게 관리해 나가는 것은 디자인의 일관성과 관리성 측면에서 매우 중요한 요소입니다.
 
-### 3. Converter
+## Converter
 IValueConverter를 관리 운영 및 확장하기 위해 아래 생성 요건과 확장에 대한 유의사항, 그리고 기존 목록과 중복되지 않도록 관련 내용들을 확인이 반드시 필요합니다.
-#### 네임스페이스   
+### 네임스페이스   
 ```csharp
 using AppCampMessenger.Based.Converters;
 ```
 
-#### 생성 요건   
+### 생성 요건   
 *다음 생성 요건에 충족할 경우 Converter를 생성합니다.*   
   1. Property 값의 변경이 Display에서만 적용해야 하는 경우.
   2. Binding Mode가 OneWay 타입일 경우.
@@ -224,7 +187,7 @@ using AppCampMessenger.Based.Converters;
 **컨버터 확장**   
 > Xaml Display에 출력되는 Data Modlel의 원본`Raw`을 유지하는 것은 매우 중요합니다. Model 또는 ViewModel을 통해 연계되는 DataContext Binding을 가능하도록 유지하기 위해 Replace성 Converter를 적극 활용하는것을 권장합니다.
   
-#### Converter 목록   
+### Converter 목록   
 - **IValueConverter**
   - **AngleToIsLargeConverter** *다운로드 프로그래스 바 Circle 100분율 계산*
   - **AngleToPointConverter** *값의 Circle 위치 좌표 계산*
@@ -255,7 +218,7 @@ BooleanToVisibilityConverter
 
 > ConverterParameter를 사용하여 Reverse 로직을 함께 처리하는 방식 보다 Converter를 두개로 나누어 관리하는 것이 훨씬 더 효율적이고 직관적입니다. 그러므로 이 프로젝트에서 ConverterParameter를 사용하는 것을 지양하는 바입니다.
 
-#### Converter 작성 요령
+### Converter 작성 요령
 기본적으로 자주 쓰이는 Visibility 처리 등의 단순 컨버터들은 이미 다양하게 제공되고 있습니다.   
 
 **예를들어** BoolToVisibilityConverter   
@@ -302,7 +265,7 @@ public class DateTimeToDisplayTextConverter : IValueConverter
     }
 }
 ```
-#### Converter Resource Pack   
+### Converter Resource Pack   
 다음은 Converter를 사용하기 위해 선언되는 Resource 장소입니다.
 
 파일 위치 **AppCampMessenger/Based/Template/ConverterStyles.xaml**   
@@ -333,13 +296,51 @@ public class DateTimeToDisplayTextConverter : IValueConverter
 ```
 이 영역에 새로 생성된 Converter를 등록해야만 `.xaml` 전역에서 Converter를 사용할 수 있습니다.
 
-#### Converter 적용 방법   
+### Converter 적용 방법   
 ```xaml
 <TextBox Text="{Binding Created, Converter={StaticResource DateTimeToDisplayTextConverter}}"/>
 ```
 
-#### 팁 
+### 팁 
 > API를 통해 전달된 최종 데이터를 ViewModel 또는 Model 단계에서 변환하는 것은 WPF의 UI Load 체계와 순서를 고려해봤을때 좋은 방법이 아닙니다. 원본 데이터를 보존하면서 Converter를 수십 수백개 확장하는 것은 올바른 방법입니다.   
+
+
+# 주요 기능   
+## 채팅   
+  - 주요 항목    
+    |항목|내용|
+    |:---:|:---:|  
+    |Protocol|[XMPP](<https://xmpp.org/>)|
+    |Library|[Sharp.Xmpp](<https://github.com/pgstath/Sharp.Xmpp>)|
+  - 설명   
+    ```
+    Sharp.Xmpp 라이브러리의 함수 및 이벤트를 기본으로 커스텀된 메시지를 수/발신한다.   
+    채팅방 초대, 메시지 수/발신, 채팅방 정보, 채팅방 참여자 정보 등 채팅의 전반적인 부분을 담당한다.
+    채팅 관련 이벤트, 오류 처리등이 구현되어 있습니다.
+    Git Opensource code에서 현 프로젝트에 맞춰서 일부 수정되어 있사오니 참고하시기 바랍니다.
+    Message 수신시에는 Queue에 추가되어 처리되므로, 하나씩 처리됩니다.
+    ```
+  - 참조 코드   
+    ```csharp   
+    var xmpp = XMPPManager.Instanse();
+    
+	if (!xmpp.XmppConnect())
+	{
+		for (int i = 0; i < 2; i++)
+		{
+			if (!xmpp.XmppRetryConnect())
+			{
+				Messenger.Default.Send(new NotificationMessage("Logout"));
+				System.Windows.Application.Current.Dispatcher.Invoke(() =>
+				{
+					log.WriteLog(LogType.Error, System.Reflection.MethodBase.GetCurrentMethod(), "XmppConnect failed.");
+					sys.OpenMessageBox("채팅 서버 연결에 실패하였습니다.", "", MessageBoxButton.OK);
+				});
+				return;
+			}
+		}
+	}
+    ```
 
 ## Message Stanza  
   텍스트, 이미지, 동영상등 다양한 메시지가 있으며 자세한 사항은 아래를 참고하여 주시기 바랍니다.
