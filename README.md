@@ -3,13 +3,13 @@
 프로그램 개발에 적응하기 위한 편의성을 높이고, 개발 진행 방향에 대해 도움을 주고자 합니다.
 
 # 목차
-> * [개발 환경](<https://github.com/foryouself83/testrepo/blob/main/README.md#%EA%B0%9C%EB%B0%9C-%ED%99%98%EA%B2%BD>)   
+> * [개발 환경](<https://github.com/foryouself83/CampMessenger/blob/main/README.md#%EA%B0%9C%EB%B0%9C-%ED%99%98%EA%B2%BD>)   
 > * [기본 구조](<https://github.com/foryouself83/CampMessenger/blob/main/README.md#%EA%B8%B0%EB%B3%B8-%EA%B5%AC%EC%A1%B0>)
-> * [주요 기능](<https://github.com/foryouself83/testrepo/blob/main/README.md#%EC%A3%BC%EC%9A%94-%EA%B8%B0%EB%8A%A5>)   
+> * [주요 기능](<https://github.com/foryouself83/CampMessenger/blob/main/README.md#%EC%A3%BC%EC%9A%94-%EA%B8%B0%EB%8A%A5>)   
 > * [주요 화면](<https://github.com/foryouself83/CampMessenger/blob/main/README.md#%EC%A3%BC%EC%9A%94-%ED%99%94%EB%A9%B4>)
-> * [미비 사항](<https://github.com/foryouself83/testrepo/blob/main/README.md#%EB%AF%B8%EB%B9%84-%EC%82%AC%ED%95%AD>)    
-> * [최근 개발 항목](<https://github.com/foryouself83/testrepo/blob/main/README.md#%EC%B5%9C%EA%B7%BC-%EA%B0%9C%EB%B0%9C-%ED%95%AD%EB%AA%A9>)    
-> * [참고 사항](<https://github.com/foryouself83/testrepo/blob/main/README.md#%EC%B0%B8%EA%B3%A0%EC%82%AC%ED%95%AD>)   
+> * [미비 사항](<https://github.com/foryouself83/CampMessenger/blob/main/README.md#%EB%AF%B8%EB%B9%84-%EC%82%AC%ED%95%AD>)    
+> * [최근 개발 항목](<https://github.com/foryouself83/CampMessenger/blob/main/README.md#%EC%B5%9C%EA%B7%BC-%EA%B0%9C%EB%B0%9C-%ED%95%AD%EB%AA%A9>)    
+> * [참고 사항](<https://github.com/foryouself83/CampMessenger/blob/main/README.md#%EC%B0%B8%EA%B3%A0%EC%82%AC%ED%95%AD>)   
 > * [이재웅 인수인계서](<https://github.com/foryouself83/CampMessger/blob/main/README.md#%EC%9D%B4%EC%9E%AC%EC%9B%85-%EC%9D%B8%EC%88%98%EC%9D%B8%EA%B3%84%EC%84%9C>)
 
 # 개발 환경   
