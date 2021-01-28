@@ -222,32 +222,35 @@ public class XXXConverter : IValueConverter
 ## 브런치 전략
 ### 브런치 정의
   - **Master**
-    개발용 원격 브런치로 로컬 브런치에서 작업한 기능을 테스트하는 목적으로 사용한다.
+    개발용 원격 브런치로 로컬 브런치에서 작업한 기능을 테스트하는 목적으로 사용합니다.
   - **Pre-Production**
-    Master 브런치에서 테스트가 완료된 항목을 Commit하며, 배포 전 테스트하는 목적으로 사용한다.
+    Master 브런치에서 테스트가 완료된 항목을 Commit하며, 배포 전 테스트하는 목적으로 사용합니다.
   - **Production**
-    Pre-Production 브런치에서 테스트가 완료된 항목을 Commit하며, 최종 또는 긴급 등 배포되는 최종 소스를 관리하는 목적으로 사용한다.
+    Pre-Production 브런치에서 테스트가 완료된 항목을 Commit하며, 최종 또는 긴급 등 배포되는 최종 소스를 관리하는 목적으로 사용합니다.
     
 ### 기능 개발
   1. `Pre-Production`에서 로컬 브런치 생성
   1. 기능 개발 후 `Master` 브런치에 Commit 후 테스트
-  1. 테스트 완료 후 `Pre-Production` 브런치에 Commit
+  1. 테스트 완료 후 로컬 브런치를 `Pre-Production` 브런치에 Commit
   
 ### 배포
   1. `Prouction` 브런치에 버전정보 `Tag` 추가 후 배포   
   
 ### 배포 버전 버그 픽스
   1. `Production`에서 로컬 브런치 생성
-  2. 버그 픽스 후 `Master` 브런치에 `Commit` 후 테스트
-  3. 테스트 완료 후 `Pre-Production`, `Production` 브런치에 `Commit`
-  4. `Production` 브런치에 버전정보 `Tag` 추가 후 배포
+  1. 버그 픽스 후 `Master` 브런치에 `Commit` 후 테스트
+  1. 테스트 완료 후 로컬브런치를 `Pre-Production`, `Production` 브런치에 `Commit`
+  1. `Production` 브런치에 버전정보 `Tag` 추가 후 배포
     
 ## 배포
 ### 서명 방법
   1. AssemblyInfo.cs 에 AssemblyVersion, AssemblyFileVersion 갱신   
-  1. AppExeSignCode.bat을 이용하여 실행파일 서명   
+  1. 인증서와 `signtool.exe`을 이용하여 실행파일 서명   
   1. `Installshield`를 이용하여 설치 파일 생성   
-  1. AppSetupSignCode.bat을 이용하여 설치파일 서명   
+  1. 인증서와 `signtool.exe`을 이용하여 설치파일 서명
+  
+#### 팁
+  > 편의를 위해 `batch` 또는 `Installshield`의 빌드 전 처리를 사용해 자동화해놓으면 좋습니다.
   
 ### 배포 방법  
   1. 관리자페이지 접속
