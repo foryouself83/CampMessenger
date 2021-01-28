@@ -265,7 +265,7 @@ public class XXXConverter : IValueConverter
   1. AppSetupSignCode.bat을 이용하여 설치파일 서명   
   
 ### 배포 방법  
-  1. <https://admin.lubig.co.kr/login>, <https://adminstage.lubig.co.kr/login> 접속
+  1. 관리자페이지 접속
   1. 관리자페이지 로그인
   1. 설정 > PC 버전관리 > 신규 버전 등록 선택   
 
