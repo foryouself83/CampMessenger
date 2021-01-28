@@ -97,7 +97,7 @@ AppCampMessenger/Based/Template/PathStyles.xaml
   
   **적용 사례**   
   
-  > 캠프 메인 로고, 색상이 다른 복합 Geometry 기반 이미지 등
+  > 메인 로고, 색상이 다른 복합 Geometry 기반 이미지 등
 - **Path, Style**
   단일 Geometry를 포함하는 `Path` Style 형식
   
