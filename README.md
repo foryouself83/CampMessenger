@@ -58,21 +58,7 @@ Resource, DataContext 항목들의 규칙과 방향성을 인지하고 개발의
   <Application.Resources>
     <ResourceDictionary>
         <ResourceDictionary.MergedDictionaries>
-            <ResourceDictionary Source="/AppCampMessenger;component/Based/Template/ConverterStyles.xaml"/>
-            <ResourceDictionary Source="/AppCampMessenger;component/Based/Template/ColorStyles.xaml"/>
-            <ResourceDictionary Source="/AppCampMessenger;component/Based/Template/PathStyles.xaml"/>
-            <ResourceDictionary Source="/AppCampMessenger;component/Based/Template/ApplicationStyles.xaml"/>
-            <ResourceDictionary Source="/AppCampMessenger;component/Based/Template/LoginViewStyles.xaml"/>
-            <ResourceDictionary Source="/AppCampMessenger;component/Based/Template/FriendViewStyles.xaml"/>
-            <ResourceDictionary Source="/AppCampMessenger;component/Based/Template/NoticeStyles.Circle.xaml"/>
-            <ResourceDictionary Source="/AppCampMessenger;component/Based/Template/NoticeStyles.List.xaml"/>
-            <ResourceDictionary Source="/AppCampMessenger;component/Based/Template/NoticeStyles.Hierachy.xaml"/>
-            <ResourceDictionary Source="/AppCampMessenger;component/Based/Template/NoticeStyles.Detail.xaml"/>
-            <ResourceDictionary Source="/AppCampMessenger;component/Based/Template/NoticeStyles.Window.xaml"/>
-            <ResourceDictionary Source="/AppCampMessenger;component/Based/Template/NoticeStyles.Bar.xaml"/>
-            <ResourceDictionary Source="/AppCampMessenger;component/Based/Template/NoticeStyles.xaml"/>
-            <ResourceDictionary Source="/AppCampMessenger;component/Based/Template/StorySearchStyles.xaml"/>
-            <ResourceDictionary Source="/AppCampMessenger;component/Based/Template/TalkListStyles.xaml"/>
+            ...
         </ResourceDictionary.MergedDictionaries>
     </ResourceDictionary>            
   </Application.Resources>
@@ -110,16 +96,9 @@ AppCampMessenger/Based/Template/PathStyles.xaml
   ##### PathStyles.xaml   
   
   ```xaml
-  <DrawingImage x:Key="DRAWING_NOTICE">
+  <DrawingImage x:Key="...">
     <DrawingImage.Drawing>
-        <DrawingGroup ClipGeometry="M0,0 V20 H20 V0 H0 Z">
-            <DrawingGroup Opacity="1" Transform="1,0,0,1,-471.67,-355.503">
-                <GeometryDrawing Brush="#FF818BB9" Geometry="F1 M20,20z M0,0z..."/>
-                <DrawingGroup Transform="1,0,0,1,1.526,0.868">
-                    <GeometryDrawing Brush="#FF818BB9" Geometry="F1 M20,20z M0..."/>
-                </DrawingGroup>
-            </DrawingGroup>
-        </DrawingGroup>
+        ...
     </DrawingImage.Drawing>
   </DrawingImage>
   ```
@@ -140,7 +119,7 @@ AppCampMessenger/Based/Template/PathStyles.xaml
   **PathStyles.xaml**   
   
   ```xaml
-  <Style TargetType="Path" x:Key="PATH_CLOSE">
+  <Style TargetType="Path" x:Key="PATH_...">
       <Setter Property="Data" Value="M12,2C17.53,2 22,6.47 22,12C22,17.53 17.53..."/>
   </Style>
   ```
@@ -172,7 +151,7 @@ AppCampMessenger/Based/Template/PathStyles.xaml
 IValueConverter를 관리 운영 및 확장하기 위해 아래 생성 요건과 확장에 대한 유의사항, 그리고 기존 목록과 중복되지 않도록 관련 내용들을 확인이 반드시 필요합니다.
 ### 네임스페이스   
 ```csharp
-using AppCampMessenger.Based.Converters;
+using XXX.Based.Converters;
 ```
 
 ### 생성 요건   
@@ -183,23 +162,6 @@ using AppCampMessenger.Based.Converters;
   
 **컨버터 확장**   
 > Xaml Display에 출력되는 Data Modlel의 원본`Raw`을 유지하는 것은 매우 중요합니다. Model 또는 ViewModel을 통해 연계되는 DataContext Binding을 가능하도록 유지하기 위해 Replace성 Converter를 적극 활용하는것을 권장합니다.
-  
-### Converter 목록   
-- **IValueConverter**
-  - **AngleToIsLargeConverter** *다운로드 프로그래스 바 Circle 100분율 계산*
-  - **AngleToPointConverter** *값의 Circle 위치 좌표 계산*
-  - **BooleanToCollapsedConverter** *Boolean 값이 True일 때 Collapsed or Visible 반환*
-  - **BooleanToReverseConverter** *Boolean 값이 True일 때 False or True 반환*
-  - **BooleanToVisibilityConverter** *Boolean 값이 True일 때 Visible or Collapsed 반환*  
-  - **BytesToFormatConverter** *Bytes 값을 KB, MB, GB 등의 용량 단위로 반환*
-  - **DateTimeToDisplayTextConverter** *DateTime 타입을 3일전 형식의 포멧으로 반환*
-  - **EmptyToCollapsedConverter** *값이 Empty일 때 Collapsed or Visible 반환*
-  - **EmptyToVisibilityConverter** *값이 Empty일 때 Visible or Collapsed 반환*
-  - **ExistToVisibilityConverter** *값이 존재할 때 (!string.IsEmpty(vlaue)) Visibility or Collapsed 반환*
-  - **FriendDescriptionWidthConverter** *값의 길이에 따라 Width를 반환* *비 범용성*
-  - **TextBlockHyperLinkConverter** *값을 hyperlink로 반환*
-  - **ZeroToCollapsedConverter** *값이 0일 때 Collapsed or Visible 반환*
-  - **ZeroToVisibilityConverter** *값이 0일 때 Visible or Collapsed 반환*   
 
 #### Converter 클래스 규칙
 **클래스 이름**, Converter의 네이밍 규칙은 변환되는 대상의 타입 또는 성격에 맞는 직관적인 단어를 시작으로 To **{변환되는 결과 형태의 타입}** 을 연결하여 클래스명을 마무리 합니다.   
@@ -218,10 +180,10 @@ BooleanToVisibilityConverter
 ### Converter 작성 요령
 기본적으로 자주 쓰이는 Visibility 처리 등의 단순 컨버터들은 이미 다양하게 제공되고 있습니다.   
 
-**예를들어** BoolToVisibilityConverter   
+**예를들어**    
 
 ```csharp
-public class DateTimeToDisplayTextConverter : IValueConverter
+public class XXXConverter : IValueConverter
 {
     public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
     {
@@ -235,28 +197,15 @@ public class DateTimeToDisplayTextConverter : IValueConverter
 }
 ```
 
-**처리 로직이 필요한 컨버터의 경우** DateTimeToDisplayTextConverter
+**처리 로직이 필요한 컨버터의 경우** 
 ```csharp
-public class DateTimeToDisplayTextConverter : IValueConverter
+public class XXXConverter : IValueConverter
 {
     public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
     {
         if (value is string strDt)
         {
-            DateTime dt = DateTime.Parse(strDt);
-            DateTime now = DateTime.Now;
-            var tick = now.Subtract(dt);
-
-            if (tick.TotalSeconds < 60)
-                return $"방금";
-            if (tick.TotalMinutes < 61)
-                return $"{(int)tick.TotalMinutes}분전";
-            else if ((int)tick.TotalHours < 25)
-                return $"{(int)tick.TotalHours}시간전";
-            else if ((int)tick.TotalDays < 2)
-                return $"어제";
-            else 
-                return dt.ToString("yyyy.MM.dd");
+            //...
         }
         return value;
     }
@@ -265,37 +214,21 @@ public class DateTimeToDisplayTextConverter : IValueConverter
 ### Converter Resource Pack   
 다음은 Converter를 사용하기 위해 선언되는 Resource 장소입니다.
 
-파일 위치 **AppCampMessenger/Based/Template/ConverterStyles.xaml**   
+파일 위치 **XXX/Based/Template/ConverterStyles.xaml**   
 ```xaml
 <ResourceDictionary xmlns="http://schemas.microsoft..."
                     xmlns:x="http://schemas.microsoft..."
-                    xmlns:cvt="clr-namespace:AppCampMes...">
+                    xmlns:cvt="clr-namespace:...">
     
-    <cvt:BooleanToReverseConverter x:Key="BooleanToReverseConverter"/>
-    <cvt:BooleanToCollapsedConverter x:Key="BooleanToCollapsedConverter"/>
-    <cvt:BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter"/>
-    
-    <cvt:TextBlockHyperLinkConverter x:Key="TextBlockHyperLinkConverter"/>
-    <cvt:EmptyToVisibilityConverter x:Key="EmptyToVisibilityConverter"/>
-    <cvt:ZeroToVisibilityConverter x:Key="ZeroToVisibilityConverter"/>
-    <cvt:BoolToVisibilityConverter x:Key="BoolToVisibilityConverter"/>
-    <cvt:BoolToCollapsedConverter  x:Key="BoolToCollapsedConverter"/>
-    <cvt:ExistToVisibilityConverter x:Key="ExistToVisibilityConverter"/>
-    <cvt:ZeroToCollapsedConverter x:Key="ZeroToCollapsedConverter"/>
-    <cvt:EmptyToCollapsedConverter x:Key="EmptyToCollapsedConverter"/>
-    <cvt:FriendDescriptionWidthConverter x:Key="FriendDescriptionWidthConverter"/>
-    <cvt:LeftMarginConverter x:Key="LeftMarginConverter"/>
-
-    <cvt:DateTimeToDisplayTextConverter x:Key="DateTimeToDisplayTextConverter"/>
-    <cvt:AngleToIsLargeConverter x:Key="AngleToIsLargeConverter"/>
-    <cvt:BytesToFormatConverter x:Key="BytesToFormatConverter"/>
+    <cvt:...Converter x:Key="...Converter"/>
+    ...
 </ResourceDictionary> 
 ```
 이 영역에 새로 생성된 Converter를 등록해야만 `.xaml` 전역에서 Converter를 사용할 수 있습니다.
 
 ### Converter 적용 방법   
 ```xaml
-<TextBox Text="{Binding Created, Converter={StaticResource DateTimeToDisplayTextConverter}}"/>
+<TextBox Text="{Binding Created, Converter={StaticResource XXXConverter}}"/>
 ```
 
 ### 팁 
@@ -343,87 +276,22 @@ public class DateTimeToDisplayTextConverter : IValueConverter
 채팅 관련 이벤트, 오류 처리등이 구현되어 있습니다.   
 Message 수신시에는 `Queue`에 추가되어 하나씩 처리됩니다.   
 
-- 참조 코드   
-  ```csharp   
-	var xmpp = XMPPManager.Instanse();
-  
-	if (!xmpp.XmppConnect())
-	{
-		for (int i = 0; i < 2; i++)
-		{
-			if (!xmpp.XmppRetryConnect())
-			{
-				Messenger.Default.Send(new NotificationMessage("Logout"));
-				System.Windows.Application.Current.Dispatcher.Invoke(() =>
-				{
-					log.WriteLog(LogType.Error, System.Reflection.MethodBase.GetCurrentMethod(), "XmppConnect failed.");
-					sys.OpenMessageBox("채팅 서버 연결에 실패하였습니다.", "", MessageBoxButton.OK);
-				});
-				return;
-			}
-		}
-	}
-    ```
-
 ## API   
 `HttpWebRequest` 를 이용하여 `Json` 형식으로 데이터를 수/발신한다.
 각 서버에서 지원하는 API를 이용하여 해당 기능을 수행한다.       
-    
-- 참조 코드   
-  ```csharp   
-  var login = LoginManager.Instanse();
-  var api = LubigAPIManager.Instanse();
-  
-  login.Login = api.SendLoginAPI(LoginID, strPassword, out errMsg);
-  if (login.Login == false)
-  {
-		AlarmText = errMsg;
-  }
-  ```
     
 ## AWS
 AWS의 S3/EC2를 이용하여 파일을 업로드 및 다운로드한다.   
 비동기로 동작하며 업로드시에는 Thread, 다운로드시에는 event로 처리한다.   
 
-- 참조 코드   
-  ```csharp   
-  AWSManager aws = AWSManager.Instanse();
-  
-  AwsUploadDataInfo info = new AwsUploadDataInfo();
-  info.ImageStream = outMs;
-  info.BucketName = buckeFlodertName;
-  info.FileName = fileName;
-  
-  aws.AddUploadFile(info);
-  ```
     
 ## DB
 유저별 대화방, 참여자 정보, 상단고정, 알림설정등의 정보를 저장한다.    
 
-- 참조 코드   
-  ```csharp   
-  var sql = SqlManager.Instanse();
-  
-  CampMemberListInfo memberInfo = null;
-  if (!sql.SelectCampMemberInfoData(out memberInfo, userKey, campRegNo.ToString()))
-  {
-		return false;
-  }
-  ```
 
 ## 자동 업데이트      
 프로그램 버전정보를 비교하여 낮을 경우 Login시 프로그램을 업데이트한다.   
 
-- 참조 코드   
-
-  ```csharp   
-  if (!UpdateManager.Instanse().AutoUpdate(out errorMsg))
-  {
-		login.Login = false;
-		AlarmText = errMsg = "프로그램 업데이트가 필요합니다.";
-		return;
-  }
-  ```   
 # 주요 화면
 ## 로그인
   > ID, Password 입력하여 로그인 및 자동업데이트됩니다.
@@ -470,11 +338,7 @@ AWS의 S3/EC2를 이용하여 파일을 업로드 및 다운로드한다.
   > 캠프 친구의 소식을 구독할 수 있습니다.
   <img width="20%" height="20%" src="https://github.com/foryouself83/CampMessenger/blob/main/src/Images/CampProfileWNd.png?raw=true"/>
   
-# 참고 사항
-## 시퀀스 다이어그램
-### 로그인     
-  <img style="width: 300px; height: 500px" src="https://github.com/foryouself83/CampMessenger/blob/main/src/Images/Login_seq.png?raw=true"/>
-  
+# 참고 사항  
 ## 모바일 어플리케이션 링크
   [google play](<https://play.google.com/store/apps/details?id=com.enliple.lubig>)
 
