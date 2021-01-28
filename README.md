@@ -24,29 +24,14 @@ Resource, DataContext 항목들의 규칙과 방향성을 인지하고 개발의
 모든 리스소 관리에 대한 정책, 개발 확장 방법에 대한 구조를 설명합니다.   
 ### 리소스 관리대상 주요 위치   
 
-> *AppCampMessenger/App.xaml*   
-> *AppCampMessenger/Based/Template/*
+> *XXX/App.xaml*   
+> *XXX/Based/Template/*
 
 - **분류된 리소스 항목**   
   그 외에 분류되지 않은 리소스 객체들은 `ApplicationStyles.xaml`에 위치하고 있습니다.
   
   - **Template**
-    - ApplicationStyles.xaml    
-    - ColorStyles.xaml    
-    - CommonStyles.xaml
-    - ConverterStyles.xaml
-    - FriendViewStyles.xaml
-    - LoginViewStyles.xaml
-    - NoticeStyles.Bar.xaml
-    - NoticeStyles.Circle.xaml
-    - NoticeStyles.Detail.xaml
-    - NoticeStyles.Hierachy.xaml
-    - NoticeStyles.List.xaml
-    - NoticeStyles.Window.xaml
-    - NoticeStyles.xaml
-    - PathStyles.xaml
-    - StorySearchStyles.xaml
-    - TalkListStyles.xaml   
+    - XXXStyles.xaml   
     
   리소스를 화면 또는 컨트롤, 기능별로 상황에 맞게 분류하도록 귀칙을 정하고 있으므로 향후 개발, 확장에 있어서도 리소스를 최대한 파일별로 나누어 관리하도록 권장합니다.
   *(리소스 파일의 순서와 순환참조에 관하여 아래에서 설명)*
@@ -341,4 +326,3 @@ AWS의 S3/EC2를 이용하여 파일을 업로드 및 다운로드한다.
 # 참고 사항  
 ## 모바일 어플리케이션 링크
   [google play](<https://play.google.com/store/apps/details?id=com.enliple.lubig>)
-
