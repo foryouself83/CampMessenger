@@ -265,12 +265,12 @@ public class XXXConverter : IValueConverter
 Message 수신시에는 `Queue`에 추가되어 하나씩 처리됩니다.   
 
 ## API   
-`HttpWebRequest` 를 이용하여 `Json` 형식으로 데이터를 수/발신한다.
-각 서버에서 지원하는 API를 이용하여 해당 기능을 수행한다.       
+`HttpWebRequest` 를 이용하여 `Json` 형식으로 데이터를 수/발신합니다.
+서버에서 지원하는 API를 이용하여 해당 기능을 수행합니다.       
     
 ## AWS
-AWS의 S3/EC2를 이용하여 파일을 업로드 및 다운로드한다.   
-비동기로 동작하며 업로드시에는 Thread, 다운로드시에는 event로 처리한다.   
+AWS의 S3/EC2를 이용하여 파일을 업로드 및 다운로드합니다.   
+비동기로 동작하며 업로드시에는 Thread, 다운로드시에는 event로 처리합니다.   
 
     
 ## DB
