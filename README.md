@@ -5,7 +5,7 @@
 # 목차
 * [개발 환경](<https://github.com/foryouself83/CampMessenger#%EA%B0%9C%EB%B0%9C-%ED%99%98%EA%B2%BD>)   
 * [기본 구조](<https://github.com/foryouself83/CampMessenger/blob/main/README.md#%EA%B8%B0%EB%B3%B8-%EA%B5%AC%EC%A1%B0>)   
-* 주요 기능   
+* [주요 기능](<https://github.com/foryouself83/CampMessenger/blob/main/README.md#%EC%A3%BC%EC%9A%94-%EA%B8%B0%EB%8A%A5>)   
 * 주요 화면   
 * 참고 사항     
 
