@@ -259,7 +259,7 @@ public class XXXConverter : IValueConverter
 
 # 주요 기능   
 ## 채팅   
-`Openfire Server` 기반의 [XMPP](<https://xmpp.org/>) 프로토콜을 사용하며, [Sharp.Xmpp](<https://github.com/pgstath/Sharp.Xmpp>) 라이브러리의 함수 및 이벤트를 기본으로 커스텀된 메시지를 수/발신합니다.   
+[Openfire Server](<https://www.igniterealtime.org/projects/openfire/>) 기반의 [XMPP](<https://xmpp.org/>) 프로토콜을 사용하며, [Sharp.Xmpp](<https://github.com/pgstath/Sharp.Xmpp>) 라이브러리의 함수 및 이벤트를 기본으로 커스텀된 메시지를 수/발신합니다.   
 채팅방 초대, 메시지 수/발신, 채팅방 정보, 채팅방 참여자 정보 등 채팅의 전반적인 부분을 담당합니다.   
 채팅 관련 이벤트, 오류 처리등이 구현되어 있습니다.   
 Message 수신시에는 `Queue`에 추가되어 하나씩 처리됩니다.   
