@@ -61,8 +61,7 @@ Resource, DataContext 항목들의 규칙과 방향성을 인지하고 개발의
 
 **Zeplin** 디자인 팀간 협업   
 
-캠프 프로젝트는 기본적으로 Zeplin 플랫폼에서 `.svg`와 `.png` 모두 전달받고 있으며 누락되는 리소스는 디자인팀에 요청하고 있습니다.   
-
+기본적으로 Zeplin 플랫폼에서 `.svg`와 `.png` 모두 전달받고 있으며 누락되는 리소스는 디자인팀에 요청하고 있습니다.   
 
 디자인 리소스는 기본적으로 `Geometry` Path Data를 권장하며 그 외에 `Vector` 기반이 아닌 이미지인 경우 `.png` 사용합니다. 그리고 Geometry 관련 리소스는 이 파일`PathStyles.xaml`에서 관리합니다.   
 
@@ -74,7 +73,7 @@ Resource, DataContext 항목들의 규칙과 방향성을 인지하고 개발의
 
 ### Geometry Resource 위치
 ```
-AppCampMessenger/Based/Template/PathStyles.xaml
+/Based/Template/PathStyles.xaml
 ```
 - #### DrawingImage
   1개 이상의 복합 Geomatry 리소스 `DrawingImage` 형식
