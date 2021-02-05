@@ -265,7 +265,7 @@ Message 수신시에는 `Queue`에 추가되어 하나씩 처리됩니다.
 
 ## API   
 `HttpWebRequest` 를 이용하여 `Json` 형식으로 데이터를 수/발신합니다.   
-RestAPI를 이용하여 해당 기능을 수행합니다.       
+Rest api를 이용하여 해당 기능을 수행합니다.       
     
 ## AWS
 AWS의 S3/EC2를 이용하여 파일을 업로드 및 다운로드합니다.   
