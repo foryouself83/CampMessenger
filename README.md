@@ -1,7 +1,7 @@
 # 개요
 텍스트, 이미지, 이모티콘 등 메시지 전송 기능과 이미지, 동영상등을 업로드하여   
 친구들과 같은 모임에 있는 사람들에게 노출시킬 수 있는 피드 기능을 제공하는 프로그램입니다.
-
+   
 # 목차
 * [개발 환경](<https://github.com/foryouself83/CampMessenger#%EA%B0%9C%EB%B0%9C-%ED%99%98%EA%B2%BD>)   
 * [기본 구조](<https://github.com/foryouself83/CampMessenger/blob/main/README.md#%EA%B8%B0%EB%B3%B8-%EA%B5%AC%EC%A1%B0>)   
