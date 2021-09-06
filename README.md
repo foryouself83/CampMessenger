@@ -15,7 +15,7 @@
 |개발 언어|C# / WPF / .NetFramework 4.6.1|
 |DB|System.Data.Sqlite|
 |IDE|VisualStudio 2019 Pro|
-|SCM|Git|
+|SCM|BONOBO Git|
 |Design|Zeplin|   
 
 # 기본 구조
