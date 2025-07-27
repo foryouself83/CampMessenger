@@ -218,28 +218,28 @@ public class XXXConverter : IValueConverter
 ### 팁 
 > API를 통해 전달된 최종 데이터를 ViewModel 또는 Model 단계에서 변환하는 것은 WPF의 UI Load 체계와 순서를 고려해봤을때 좋은 방법이 아닙니다. 원본 데이터를 보존하면서 Converter를 수십 수백개 확장하는 것은 올바른 방법입니다.   
 
-## 브런치 전략
-### 브런치 정의
+## 브랜치 전략
+### 브랜치 정의
   - **Master**
-    개발용 원격 브런치로 로컬 브런치에서 작업한 기능을 테스트하는 목적으로 사용합니다.
+    개발용 원격 브랜치로 로컬 브랜치에서 작업한 기능을 테스트하는 목적으로 사용합니다.
   - **Pre-Production**
-    Master 브런치에서 테스트가 완료된 항목을 Commit하며, 배포 전 테스트하는 목적으로 사용합니다.
+    Master 브랜치에서 테스트가 완료된 항목을 Commit하며, 배포 전 테스트하는 목적으로 사용합니다.
   - **Production**
-    Pre-Production 브런치에서 테스트가 완료된 항목을 Commit하며, 최종 또는 긴급 등 배포되는 최종 소스를 관리하는 목적으로 사용합니다.
+    Pre-Production 브랜치에서 테스트가 완료된 항목을 Commit하며, 최종 또는 긴급 등 배포되는 최종 소스를 관리하는 목적으로 사용합니다.
     
 ### 기능 개발
-  1. `Pre-Production`에서 로컬 브런치 생성
-  1. 기능 개발 후 `Master` 브런치에 Commit 후 테스트
-  1. 테스트 완료 후 로컬 브런치를 `Pre-Production` 브런치에 Commit
+  1. `Pre-Production`에서 로컬 브랜치 생성
+  1. 기능 개발 후 `Master` 브랜치에 Commit 후 테스트
+  1. 테스트 완료 후 로컬 브랜치를 `Pre-Production` 브랜치에 Commit
   
 ### 배포
-  1. `Prouction` 브런치에 버전정보 `Tag` 추가 후 배포   
+  1. `Prouction` 브랜치에 버전정보 `Tag` 추가 후 배포   
   
 ### 배포 버전 버그 픽스
-  1. `Production`에서 로컬 브런치 생성
-  1. 버그 픽스 후 `Master` 브런치에 `Commit` 후 테스트
-  1. 테스트 완료 후 로컬브런치를 `Pre-Production`, `Production` 브런치에 `Commit`
-  1. `Production` 브런치에 버전정보 `Tag` 추가 후 배포
+  1. `Production`에서 로컬 브랜치 생성
+  1. 버그 픽스 후 `Master` 브랜치에 `Commit` 후 테스트
+  1. 테스트 완료 후 로컬브랜치를 `Pre-Production`, `Production` 브랜치에 `Commit`
+  1. `Production` 브랜치에 버전정보 `Tag` 추가 후 배포
     
 ## 배포
 ### 서명 방법
